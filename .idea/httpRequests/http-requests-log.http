@@ -1,3 +1,242 @@
+POST http://localhost:4000/api/v1/patients
+Content-Type: application/json
+Content-Length: 135
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Vivian Egi",
+  "email": "",
+  "address": "Pipkin Court",
+  "dateOfBirth": "1995-09-24",
+  "registeredDate": "2024-02-28"
+}
+
+<> 2026-02-02T174100.400.json
+
+###
+
+POST http://localhost:4000/api/v1/patients
+Content-Type: application/json
+Content-Length: 135
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Vivian Egi",
+  "email": "",
+  "address": "Pipkin Court",
+  "dateOfBirth": "1995-09-24",
+  "registeredDate": "2024-02-28"
+}
+
+<> 2026-02-02T173817.400.json
+
+###
+
+POST http://localhost:4000/api/v1/patients
+Content-Type: application/json
+Content-Length: 135
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Vivian Egi",
+  "email": "",
+  "address": "Pipkin Court",
+  "dateOfBirth": "1995-09-24",
+  "registeredDate": "2024-02-28"
+}
+
+<> 2026-02-02T173553.400.json
+
+###
+
+POST http://localhost:4000/api/v1/patients
+Content-Type: application/json
+Content-Length: 135
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Vivian Egi",
+  "email": "",
+  "address": "Pipkin Court",
+  "dateOfBirth": "1995-09-24",
+  "registeredDate": "2024-02-28"
+}
+
+<> 2026-02-02T173516.400.json
+
+###
+
+POST http://localhost:4000/api/v1/patients
+Content-Type: application/json
+Content-Length: 135
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Vivian Egi",
+  "email": "",
+  "address": "Pipkin Court",
+  "dateOfBirth": "1995-09-24",
+  "registeredDate": "2024-02-28"
+}
+
+<> 2026-02-02T171738.400.json
+
+###
+
+POST http://localhost:4000/api/v1/patients
+Content-Type: application/json
+Content-Length: 135
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Vivian Egi",
+  "email": "",
+  "address": "Pipkin Court",
+  "dateOfBirth": "1995-09-24",
+  "registeredDate": "2024-02-28"
+}
+
+###
+
+POST http://localhost:4000/api/v1/patients
+Content-Type: application/json
+Content-Length: 135
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Vivian Egi",
+  "email": "",
+  "address": "Pipkin Court",
+  "dateOfBirth": "1995-09-24",
+  "registeredDate": "2024-02-28"
+}
+
+###
+
+POST http://localhost:4000/api/v1/patients
+Content-Type: application/json
+Content-Length: 135
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Vivian Egi",
+  "email": "",
+  "address": "Pipkin Court",
+  "dateOfBirth": "1995-09-24",
+  "registeredDate": "2024-02-28"
+}
+
+###
+
+POST http://localhost:4000/api/v1/patients
+Content-Type: application/json
+Content-Length: 135
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Vivian Egi",
+  "email": "",
+  "address": "Pipkin Court",
+  "dateOfBirth": "1995-09-24",
+  "registeredDate": "2024-02-28"
+}
+
+###
+
+POST http://localhost:4000/api/v1/patients
+Content-Type: application/json
+Content-Length: 135
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Vivian Egi",
+  "email": "",
+  "address": "Pipkin Court",
+  "dateOfBirth": "1995-09-24",
+  "registeredDate": "2024-02-28"
+}
+
+<> 2026-02-02T093854.400.json
+
+###
+
+POST http://localhost:4000/api/v1/patients
+Content-Type: application/json
+Content-Length: 154
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Albert Egi",
+  "email": "albertegi@email.com",
+  "address": "Pipkin Court",
+  "dateOfBirth": "1995-09-24",
+  "registeredDate": "2024-02-28"
+}
+
+<> 2026-02-02T093518.201.json
+
+###
+
+POST http://localhost:4000/api/v1/patients
+Content-Type: application/json
+Content-Length: 154
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Albert Egi",
+  "email": "albertegi@email.com",
+  "address": "Pipkin Court",
+  "dateOfBirth": "14-09-2025",
+  "registeredDate": "2024-02-28"
+}
+
+<> 2026-02-02T093028.500.json
+
+###
+
+POST http://localhost:4000/api/v1/patients
+Content-Type: application/json
+Content-Length: 154
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Albert Egi",
+  "email": "albertegi@email.com",
+  "address": "Pipkin Court",
+  "dateOfBirth": "14-09-2025",
+  "registeredDate": "2026-02-28"
+}
+
+<> 2026-02-02T092447.500.json
+
+###
+
 GET http://localhost:4000/api/v1/patients
 Content-Type: application/json
 User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6

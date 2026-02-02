@@ -1,8 +1,11 @@
 package com.alvirg.patientservice.mapper;
 
+import com.alvirg.patientservice.dto.PatientRequest;
 import com.alvirg.patientservice.dto.PatientResponse;
 import com.alvirg.patientservice.model.Patient;
 import org.springframework.stereotype.Service;
+
+import java.time.LocalDate;
 
 @Service
 public class PatientMapper {
@@ -14,6 +17,16 @@ public class PatientMapper {
                 .email(patient.getEmail())
                 .address(patient.getAddress())
                 .dateOfBirth(patient.getDateOfBirth().toString())
+                .build();
+    }
+
+    public Patient toPatient(PatientRequest request) {
+        return Patient.builder()
+                .name(request.getName())
+                .email(request.getEmail())
+                .address(request.getAddress())
+                .dateOfBirth(LocalDate.parse(request.getDateOfBirth()))
+                .registeredDate(LocalDate.parse(request.getRegisteredDate()))
                 .build();
     }
 }

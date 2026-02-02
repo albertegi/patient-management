@@ -1,15 +1,13 @@
 package com.alvirg.patientservice.controller;
 
+import com.alvirg.patientservice.dto.PatientRequest;
 import com.alvirg.patientservice.dto.PatientResponse;
 import com.alvirg.patientservice.service.PatientService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -19,6 +17,15 @@ import java.util.List;
 public class PatientController {
 
     private final PatientService service;
+
+    @PostMapping
+    public ResponseEntity<PatientResponse> createPatient(
+            @Valid
+            @RequestBody
+            PatientRequest request){
+        return  ResponseEntity.status(HttpStatus.CREATED).body(this.service.createPatient(request));
+
+    }
 
     @GetMapping
     public ResponseEntity<List<PatientResponse>> getPatients(){
