@@ -1,5 +1,119 @@
 POST http://localhost:4000/api/v1/patients
 Content-Type: application/json
+Content-Length: 155
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Vivian William",
+  "email": "vivian@email.com",
+  "address": "Pipkin Court",
+  "dateOfBirth": "1995-09-24",
+  "registeredDate": "2024-02-28"
+}
+
+<> 2026-02-02T181810.400.json
+
+###
+
+POST http://localhost:4000/api/v1/patients
+Content-Type: application/json
+Content-Length: 155
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Vivian William",
+  "email": "vivian@email.com",
+  "address": "Pipkin Court",
+  "dateOfBirth": "1995-09-24",
+  "registeredDate": "2024-02-28"
+}
+
+<> 2026-02-02T181748.201.json
+
+###
+
+POST http://localhost:4000/api/v1/patients
+Content-Type: application/json
+Content-Length: 156
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Vivian Pere Egi",
+  "email": "vivian@email.com",
+  "address": "Pipkin Court",
+  "dateOfBirth": "1995-09-24",
+  "registeredDate": "2024-02-28"
+}
+
+<> 2026-02-02T174606.201.json
+
+###
+
+POST http://localhost:4000/api/v1/patients
+Content-Type: application/json
+Content-Length: 141
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "",
+  "email": "vivian@email.com",
+  "address": "Pipkin Court",
+  "dateOfBirth": "1995-09-24",
+  "registeredDate": "2024-02-28"
+}
+
+<> 2026-02-02T174544.400.json
+
+###
+
+POST http://localhost:4000/api/v1/patients
+Content-Type: application/json
+Content-Length: 152
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Vivian Egi",
+  "email": "vivian@@email.com",
+  "address": "Pipkin Court",
+  "dateOfBirth": "1995-09-24",
+  "registeredDate": "2024-02-28"
+}
+
+<> 2026-02-02T174520.400.json
+
+###
+
+POST http://localhost:4000/api/v1/patients
+Content-Type: application/json
+Content-Length: 135
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Vivian Egi",
+  "email": "",
+  "address": "Pipkin Court",
+  "dateOfBirth": "1995-09-24",
+  "registeredDate": "2024-02-28"
+}
+
+<> 2026-02-02T174421.400.json
+
+###
+
+POST http://localhost:4000/api/v1/patients
+Content-Type: application/json
 Content-Length: 135
 User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
 Accept-Encoding: br, deflate, gzip, x-gzip

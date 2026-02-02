@@ -3,8 +3,8 @@ POST http://localhost:4000/api/v1/patients
 Content-Type: application/json
 
 {
-  "name": "Vivian Egi",
-  "email": "",
+  "name": "Vivian William",
+  "email": "vivian@email.com",
   "address": "Pipkin Court",
   "dateOfBirth": "1995-09-24",
   "registeredDate": "2024-02-28"

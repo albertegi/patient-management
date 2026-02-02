@@ -2,6 +2,7 @@ package com.alvirg.patientservice.service;
 
 import com.alvirg.patientservice.dto.PatientRequest;
 import com.alvirg.patientservice.dto.PatientResponse;
+import com.alvirg.patientservice.exception.EmailAlreadyExistsException;
 import com.alvirg.patientservice.mapper.PatientMapper;
 import com.alvirg.patientservice.model.Patient;
 import com.alvirg.patientservice.repository.PatientRepository;
@@ -20,8 +21,11 @@ public class PatientService {
 
     public PatientResponse createPatient(PatientRequest request){
 
-//        Patient patient = this.repository.save(this.mapper.toPatient(request));
-//        return mapper.toPatientResponse(patient);
+       var emailExists = this.repository.existsByEmail(request.getEmail());
+       if(emailExists){
+           throw new EmailAlreadyExistsException("A patient with this email already exists " + request.getEmail());
+       }
+
         return mapper.toPatientResponse(this.repository.save(this.mapper.toPatient(request)));
 
     }
