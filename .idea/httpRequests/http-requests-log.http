@@ -1,0 +1,21 @@
+GET http://localhost:4000/api/v1/patients
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2026-02-02T081007.200.json
+
+###
+
+GET http://localhost:4000/api/v1/patients
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2026-02-02T080816.200.json
+
+###
+
