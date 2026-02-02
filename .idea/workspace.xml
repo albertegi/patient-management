@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="447b987c-91dd-4ef2-af9f-876edc9685c8" name="Changes" comment="add attributes and validation to Patient model">
-      <change beforePath="$PROJECT_DIR$/patient-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/resources/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="447b987c-91dd-4ef2-af9f-876edc9685c8" name="Changes" comment="** fix dependencies in pom file&#10;** set up h2 database configuration in application.properties file to connect to in memory database" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1769999255152</updated>
-      <workItem from="1769999256297" duration="7904000" />
+      <workItem from="1769999256297" duration="8552000" />
     </task>
     <task id="LOCAL-00001" summary="Initial microservices project setup">
       <option name="closed" value="true" />
@@ -120,7 +117,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770004834860</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="** fix dependencies in pom file&#10;** set up h2 database configuration in application.properties file to connect to in memory database">
+      <option name="closed" value="true" />
+      <created>1770007969599</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1770007969599</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +146,7 @@
     <MESSAGE value="Initial microservices project setup" />
     <MESSAGE value="add Patient class" />
     <MESSAGE value="add attributes and validation to Patient model" />
-    <option name="LAST_COMMIT_MESSAGE" value="add attributes and validation to Patient model" />
+    <MESSAGE value="** fix dependencies in pom file&#10;** set up h2 database configuration in application.properties file to connect to in memory database" />
+    <option name="LAST_COMMIT_MESSAGE" value="** fix dependencies in pom file&#10;** set up h2 database configuration in application.properties file to connect to in memory database" />
   </component>
 </project>
