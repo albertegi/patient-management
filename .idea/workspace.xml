@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="447b987c-91dd-4ef2-af9f-876edc9685c8" name="Changes" comment="add a demo data to insert into the in memory database">
-      <change afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/dto/PatientResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/mapper/PatientMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/service/PatientService.java" afterDir="false" />
+    <list default="true" id="447b987c-91dd-4ef2-af9f-876edc9685c8" name="Changes" comment="add service, response and mapper classes to the application">
+      <change afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/controller/PatientController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/model/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/model/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/mapper/PatientMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/mapper/PatientMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/service/PatientService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +93,7 @@
       <option name="presentableId" value="Default" />
       <updated>1769999255152</updated>
       <workItem from="1769999256297" duration="8984000" />
-      <workItem from="1770010654509" duration="1993000" />
+      <workItem from="1770010654509" duration="3280000" />
     </task>
     <task id="LOCAL-00001" summary="Initial microservices project setup">
       <option name="closed" value="true" />
@@ -145,7 +143,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770008535419</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add service, response and mapper classes to the application">
+      <option name="closed" value="true" />
+      <created>1770017934814</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1770017934814</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,6 +174,7 @@
     <MESSAGE value="add attributes and validation to Patient model" />
     <MESSAGE value="** fix dependencies in pom file&#10;** set up h2 database configuration in application.properties file to connect to in memory database" />
     <MESSAGE value="add a demo data to insert into the in memory database" />
-    <option name="LAST_COMMIT_MESSAGE" value="add a demo data to insert into the in memory database" />
+    <MESSAGE value="add service, response and mapper classes to the application" />
+    <option name="LAST_COMMIT_MESSAGE" value="add service, response and mapper classes to the application" />
   </component>
 </project>

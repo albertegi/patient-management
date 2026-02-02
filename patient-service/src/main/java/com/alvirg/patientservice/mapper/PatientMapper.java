@@ -6,11 +6,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class PatientMapper {
-    private String id;
-    private String name;
-    private String email;
-    private String address;
-    private String dateOfBirth;
+
     public PatientResponse toPatientResponse(Patient patient) {
         return PatientResponse.builder()
                 .id(patient.getId().toString())

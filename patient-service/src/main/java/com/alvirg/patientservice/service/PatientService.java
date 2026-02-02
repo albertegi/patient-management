@@ -16,11 +16,12 @@ public class PatientService {
     private final PatientMapper mapper;
 
     public List<PatientResponse> getPatients(){
-        return this.repository.findAll()
+        List<Patient> patients = repository.findAll();
+
+        return patients
                 .stream()
                 .map(this.mapper::toPatientResponse)
                 .toList();
-
     }
 
 }
