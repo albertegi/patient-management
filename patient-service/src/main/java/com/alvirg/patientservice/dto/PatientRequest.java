@@ -27,5 +27,5 @@ public class PatientRequest {
     private String dateOfBirth;
 
     @NotBlank(message = "Registered date is required")
-    private String registeredDate;
+    private String registeredDate; // when created you can't change again
 }

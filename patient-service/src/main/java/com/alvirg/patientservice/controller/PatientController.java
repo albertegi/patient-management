@@ -10,6 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.UUID;
 
 @RestController
 @RequestMapping("/api/v1/patients")
@@ -22,19 +23,29 @@ public class PatientController {
     public ResponseEntity<PatientResponse> createPatient(
             @Valid
             @RequestBody
-            PatientRequest request){
-        return  ResponseEntity.status(HttpStatus.CREATED).body(this.service.createPatient(request));
+            PatientRequest request) {
+        return ResponseEntity.status(HttpStatus.CREATED).body(this.service.createPatient(request));
+    }
 
+    @PutMapping("/{id}")
+    public ResponseEntity<PatientResponse> updatePatient(
+            @PathVariable("id")
+            UUID id,
+            @Valid
+            @RequestBody
+            PatientRequest patientRequest
+    ) {
+        return ResponseEntity.status(HttpStatus.ACCEPTED).body(this.service.updatePatient(id, patientRequest));
     }
 
     @GetMapping
-    public ResponseEntity<List<PatientResponse>> getPatients(){
-       return ResponseEntity
-               .status(HttpStatus.OK)
-               .body(this.service.getPatients());
+    public ResponseEntity<List<PatientResponse>> getPatients() {
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(this.service.getPatients());
     }
 
 
-    }
+}
 
 
