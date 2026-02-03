@@ -28,14 +28,13 @@ public class PatientService {
         return mapper.toPatientResponse(this.patientRepository.save(this.mapper.toPatient(patientRequest)));
     }
 
-    public PatientResponse updatePatient(UUID id, PatientRequest patientRequest){
-        Patient patient = patientRepository.findById(id).orElseThrow(()-> new PatientNotfoundException("Patient not found with ID: " + id));
+    public PatientResponse updatePatient(UUID id, PatientRequest patientRequest) {
+        Patient patient = patientRepository.findById(id).orElseThrow(() -> new PatientNotfoundException("Patient not found with ID: " + id));
 
-        var emailExists = this.patientRepository.existsByEmail(patientRequest.getEmail());
-        if(emailExists){
+        var emailExists = this.patientRepository.existsByEmailAndIdNot(patientRequest.getEmail(), id);
+        if (emailExists) {
             throw new EmailAlreadyExistsException("A patient with this email already exists " + patientRequest.getEmail());
         }
-
         patient.setName(patientRequest.getName());
         patient.setAddress(patientRequest.getAddress());
         patient.setEmail(patientRequest.getEmail());
@@ -43,8 +42,6 @@ public class PatientService {
 
         Patient updatedPatient = this.patientRepository.save(patient);
         return mapper.toPatientResponse(updatedPatient);
-
-
     }
 
     public List<PatientResponse> getPatients(){

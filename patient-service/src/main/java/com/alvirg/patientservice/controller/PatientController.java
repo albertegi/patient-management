@@ -2,11 +2,14 @@ package com.alvirg.patientservice.controller;
 
 import com.alvirg.patientservice.dto.PatientRequest;
 import com.alvirg.patientservice.dto.PatientResponse;
+import com.alvirg.patientservice.dto.validators.CreatePatientValidationGroup;
 import com.alvirg.patientservice.service.PatientService;
 import jakarta.validation.Valid;
+import jakarta.validation.groups.Default;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -21,7 +24,7 @@ public class PatientController {
 
     @PostMapping
     public ResponseEntity<PatientResponse> createPatient(
-            @Valid
+            @Validated({Default.class, CreatePatientValidationGroup.class})
             @RequestBody
             PatientRequest request) {
         return ResponseEntity.status(HttpStatus.CREATED).body(this.service.createPatient(request));
@@ -31,7 +34,7 @@ public class PatientController {
     public ResponseEntity<PatientResponse> updatePatient(
             @PathVariable("id")
             UUID id,
-            @Valid
+            @Validated({Default.class})
             @RequestBody
             PatientRequest patientRequest
     ) {

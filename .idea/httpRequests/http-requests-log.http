@@ -1,3 +1,233 @@
+PUT http://localhost:4000/api/v1/patients/223e4567-e89b-12d3-a456-426614174013
+Content-Type: application/json
+Content-Length: 141
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Vincent Lewis E",
+  "email": "vincent@example.com",
+  "address": "456 Cypress St, Capital City",
+  "dateOfBirth": "1976-09-24"
+}
+
+<> 2026-02-03T194505.202.json
+
+###
+
+PUT http://localhost:4000/api/v1/patients/223e4567-e89b-12d3-a456-426614174013
+Content-Type: application/json
+Content-Length: 141
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Vincent Lewis E",
+  "email": "vincent@example.com",
+  "address": "456 Cypress St, Capital City",
+  "dateOfBirth": "1976-09-24"
+}
+
+<> 2026-02-03T190228.400.json
+
+###
+
+POST http://localhost:4000/api/v1/patients
+Content-Type: application/json
+Content-Length: 158
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Vivian E William",
+  "email": "viviane@email.com",
+  "address": "Pipkin Court",
+  "dateOfBirth": "1995-09-24",
+  "registeredDate": "2024-02-28"
+}
+
+<> 2026-02-03T190032.500.json
+
+###
+
+POST http://localhost:4000/api/v1/patients
+Content-Type: application/json
+Content-Length: 124
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Vivian E William",
+  "email": "viviane@email.com",
+  "address": "Pipkin Court",
+  "dateOfBirth": "1995-09-24"
+}
+
+<> 2026-02-03T190001.400.json
+
+###
+
+PUT http://localhost:4000/api/v1/patients/223e4567-e89b-12d3-a456-426614174013
+Content-Type: application/json
+Content-Length: 139
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Vincent Lewis",
+  "email": "vincent@example.com",
+  "address": "456 Cypress St, Capital City",
+  "dateOfBirth": "1976-09-24"
+}
+
+<> 2026-02-03T185824.202.json
+
+###
+
+PUT http://localhost:4000/api/v1/patients/223e4567-e89b-12d3-a456-426614174013
+Content-Type: application/json
+Content-Length: 139
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Vincent Lewis",
+  "email": "vincent@example.com",
+  "address": "456 Cypress St, Capital City",
+  "dateOfBirth": "1976-09-24"
+}
+
+<> 2026-02-03T185713.400.json
+
+###
+
+PUT http://localhost:4000/api/v1/patients/223e4567-e89b-12d3-a456-426614174013
+Content-Type: application/json
+Content-Length: 105
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Vincent Lewis",
+  "address": "456 Cypress St, Capital City",
+  "dateOfBirth": "1976-09-24"
+}
+
+<> 2026-02-03T185554.400.json
+
+###
+
+PUT http://localhost:4000/api/v1/patients/223e4567-e89b-12d3-a456-426614174013
+Content-Type: application/json
+Content-Length: 105
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Vincent Lewis",
+  "address": "456 Cypress St, Capital City",
+  "dateOfBirth": "1976-09-24"
+}
+
+<> 2026-02-03T182825.400.json
+
+###
+
+PUT http://localhost:4000/api/v1/patients/223e4567-e89b-12d3-a456-426614174013
+Content-Type: application/json
+Content-Length: 105
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Vincent Lewis",
+  "address": "456 Cypress St, Capital City",
+  "dateOfBirth": "1976-09-24"
+}
+
+<> 2026-02-03T182621.400.json
+
+###
+
+PUT http://localhost:4000/api/v1/patients/223e4567-e89b-12d3-a456-426614174013
+Content-Type: application/json
+Content-Length: 105
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Vincent Lewis",
+  "address": "456 Cypress St, Capital City",
+  "dateOfBirth": "1976-09-24"
+}
+
+<> 2026-02-03T181940.400.json
+
+###
+
+PUT http://localhost:4000/api/v1/patients/223e4567-e89b-12d3-a456-426614174013
+Content-Type: application/json
+Content-Length: 105
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Vincent Lewis",
+  "address": "456 Cypress St, Capital City",
+  "dateOfBirth": "1976-09-24"
+}
+
+<> 2026-02-03T181855.400.json
+
+###
+
+PUT http://localhost:4000/api/v1/patients/223e4567-e89b-12d3-a456-426614174013
+Content-Type: application/json
+Content-Length: 137
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Vincent Lewis",
+  "email": "vincent@email.com",
+  "address": "456 Cypress St, Capital City",
+  "dateOfBirth": "1976-09-24"
+}
+
+<> 2026-02-03T181720.202.json
+
+###
+
+PUT http://localhost:4000/api/v1/patients/223e4567-e89b-12d3-a456-426614174013
+Content-Type: application/json
+Content-Length: 137
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Vincent Lewis",
+  "email": "vincent@email.com",
+  "address": "456 Cypress St, Capital City",
+  "dateOfBirth": "1976-09-24"
+}
+
+<> 2026-02-03T181547.400.json
+
+###
+
 POST http://localhost:4000/api/v1/patients
 Content-Type: application/json
 Content-Length: 155

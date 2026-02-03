@@ -4,12 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="447b987c-91dd-4ef2-af9f-876edc9685c8" name="Changes" comment="** add exception handling for EmailAlreadyExistsException">
-      <change afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/exception/PatientNotfoundException.java" afterDir="false" />
+    <list default="true" id="447b987c-91dd-4ef2-af9f-876edc9685c8" name="Changes" comment="** add updatePatient method in controller to update patient record&#10;&#10;** add updatePatient method to handle the business logic of updating a patient record&#10;&#10;** add exception to handle when a patient record is not found by id&#10;&#10;** update the exception in GlobalExceptionHandler">
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2026-02-03T181547.400.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2026-02-03T181720.202.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2026-02-03T181855.400.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2026-02-03T181940.400.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2026-02-03T182621.400.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2026-02-03T182825.400.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-requests/patient-service/update-patient.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/controller/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/dto/validators/CreatePatientValidationGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-requests/patient-service/create-patient.http" beforeDir="false" afterPath="$PROJECT_DIR$/api-requests/patient-service/create-patient.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/controller/PatientController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/dto/PatientRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/dto/PatientRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/mapper/PatientMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/mapper/PatientMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/repository/PatientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/repository/PatientRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/service/PatientService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,10 +31,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTTP Request" />
         <option value="Class" />
         <option value="Record" />
         <option value="Exception" />
+        <option value="HTTP Request" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -62,6 +74,7 @@
   &quot;keyToString&quot;: {
     &quot;HTTP Request.create-patient | Create a new patient.executor&quot;: &quot;Run&quot;,
     &quot;HTTP Request.get-patients | GET request to get all patients.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.update-patient | Update an existing patient entity.executor&quot;: &quot;Run&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
     &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
@@ -76,15 +89,23 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor.code.editing&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/controller" />
+    </key>
+  </component>
   <component name="RunManager" selected="Spring Boot.PatientServiceApplication">
     <configuration name="create-patient | Create a new patient" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/create-patient.http" requestIdentifier="Create a new patient" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="get-patients | GET request to get all patients" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/get-patients.http" requestIdentifier="GET request to get all patients" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="update-patient | Update an existing patient entity" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/update-patient.http" requestIdentifier="Update an existing patient entity" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="PatientServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
@@ -97,6 +118,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.update-patient | Update an existing patient entity" />
         <item itemvalue="HTTP Request.create-patient | Create a new patient" />
         <item itemvalue="HTTP Request.get-patients | GET request to get all patients" />
       </list>
@@ -119,7 +141,7 @@
       <option name="presentableId" value="Default" />
       <updated>1769999255152</updated>
       <workItem from="1769999256297" duration="8984000" />
-      <workItem from="1770010654509" duration="21164000" />
+      <workItem from="1770010654509" duration="27181000" />
     </task>
     <task id="LOCAL-00001" summary="Initial microservices project setup">
       <option name="closed" value="true" />
@@ -217,7 +239,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770056527975</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="** add updatePatient method in controller to update patient record&#10;&#10;** add updatePatient method to handle the business logic of updating a patient record&#10;&#10;** add exception to handle when a patient record is not found by id&#10;&#10;** update the exception in GlobalExceptionHandler">
+      <option name="closed" value="true" />
+      <created>1770141799186</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1770141799186</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,6 +276,7 @@
     <MESSAGE value="add PatientRequest and required attributes and validation" />
     <MESSAGE value="** add exception handling for validation errors&#10;** add create-patient to create patient&#10;** other fixes" />
     <MESSAGE value="** add exception handling for EmailAlreadyExistsException" />
-    <option name="LAST_COMMIT_MESSAGE" value="** add exception handling for EmailAlreadyExistsException" />
+    <MESSAGE value="** add updatePatient method in controller to update patient record&#10;&#10;** add updatePatient method to handle the business logic of updating a patient record&#10;&#10;** add exception to handle when a patient record is not found by id&#10;&#10;** update the exception in GlobalExceptionHandler" />
+    <option name="LAST_COMMIT_MESSAGE" value="** add updatePatient method in controller to update patient record&#10;&#10;** add updatePatient method to handle the business logic of updating a patient record&#10;&#10;** add exception to handle when a patient record is not found by id&#10;&#10;** update the exception in GlobalExceptionHandler" />
   </component>
 </project>
