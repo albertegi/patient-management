@@ -20,11 +20,11 @@ public class PatientService {
     private final PatientRepository patientRepository;
     private final PatientMapper mapper;
 
-    public PatientResponse createPatient(PatientRequest patientRequest){
-       var emailExists = this.patientRepository.existsByEmail(patientRequest.getEmail());
-       if(emailExists){
-           throw new EmailAlreadyExistsException("A patient with this email already exists " + patientRequest.getEmail());
-       }
+    public PatientResponse createPatient(PatientRequest patientRequest) {
+        var emailExists = this.patientRepository.existsByEmail(patientRequest.getEmail());
+        if (emailExists) {
+            throw new EmailAlreadyExistsException("A patient with this email already exists " + patientRequest.getEmail());
+        }
         return mapper.toPatientResponse(this.patientRepository.save(this.mapper.toPatient(patientRequest)));
     }
 
@@ -44,13 +44,17 @@ public class PatientService {
         return mapper.toPatientResponse(updatedPatient);
     }
 
-    public List<PatientResponse> getPatients(){
+    public List<PatientResponse> getPatients() {
         List<Patient> patients = patientRepository.findAll();
 
         return patients
                 .stream()
                 .map(this.mapper::toPatientResponse)
                 .toList();
+    }
+
+    public void deletePatient(UUID id) {
+        this.patientRepository.deleteById(id);
     }
 
 }

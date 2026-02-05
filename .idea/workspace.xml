@@ -4,24 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="447b987c-91dd-4ef2-af9f-876edc9685c8" name="Changes" comment="** add updatePatient method in controller to update patient record&#10;&#10;** add updatePatient method to handle the business logic of updating a patient record&#10;&#10;** add exception to handle when a patient record is not found by id&#10;&#10;** update the exception in GlobalExceptionHandler">
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2026-02-03T181547.400.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2026-02-03T181720.202.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2026-02-03T181855.400.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2026-02-03T181940.400.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2026-02-03T182621.400.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2026-02-03T182825.400.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-requests/patient-service/update-patient.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/controller/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/dto/validators/CreatePatientValidationGroup.java" afterDir="false" />
+    <list default="true" id="447b987c-91dd-4ef2-af9f-876edc9685c8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/api-requests/patient-service/delete-patient.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patient-service/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-requests/patient-service/create-patient.http" beforeDir="false" afterPath="$PROJECT_DIR$/api-requests/patient-service/create-patient.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/controller/PatientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/dto/PatientRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/dto/PatientRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/mapper/PatientMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/mapper/PatientMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/repository/PatientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/repository/PatientRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/service/PatientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +25,9 @@
         <option value="Class" />
         <option value="Record" />
         <option value="Exception" />
-        <option value="HTTP Request" />
         <option value="Interface" />
+        <option value="HTTP Request" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
@@ -70,36 +62,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;HTTP Request.create-patient | Create a new patient.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.get-patients | GET request to get all patients.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.update-patient | Update an existing patient entity.executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.PatientServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor.code.editing&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Docker.patient-service-db.executor": "Run",
+    "Docker.patient-service.executor": "Run",
+    "HTTP Request.create-patient | Create a new patient.executor": "Run",
+    "HTTP Request.delete-patient | Delete and entitity.executor": "Run",
+    "HTTP Request.get-patients | GET request to get all patients.executor": "Run",
+    "HTTP Request.update-patient | Update an existing patient entity.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.PatientServiceApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "21",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.editor.code.editing",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.PatientServiceApplication">
+  <component name="RunManager" selected="Docker.patient-service-db">
     <configuration name="create-patient | Create a new patient" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/create-patient.http" requestIdentifier="Create a new patient" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="delete-patient | Delete and entitity" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/delete-patient.http" requestIdentifier="Delete and entitity" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="get-patients | GET request to get all patients" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/get-patients.http" requestIdentifier="GET request to get all patients" runType="Run single request">
@@ -116,8 +119,103 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="patient-service-db" type="docker-deploy" factoryName="docker-image" server-name="Docker">
+      <deployment type="docker-image">
+        <settings>
+          <option name="imageTag" value="postgres:17.5" />
+          <option name="containerName" value="patient-service-db" />
+          <option name="envVars">
+            <list>
+              <DockerEnvVarImpl>
+                <option name="name" value="POSTGRES_DB" />
+                <option name="value" value="db" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="POSTGRES_PASSWORD" />
+                <option name="value" value="password" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="POSTGRES_USER" />
+                <option name="value" value="admin_user" />
+              </DockerEnvVarImpl>
+            </list>
+          </option>
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="5432" />
+                <option name="hostPort" value="9000" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="commandLineOptions" value="--network internal" />
+          <option name="volumeBindings">
+            <list>
+              <DockerVolumeBindingImpl>
+                <option name="containerPath" value="/var/lib/postgresql/data" />
+                <option name="hostPath" value="$USER_HOME$/db_volumes/patient-service-db" />
+              </DockerVolumeBindingImpl>
+            </list>
+          </option>
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="patient-service" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="patient-service:latest" />
+          <option name="containerName" value="patient-service" />
+          <option name="envVars">
+            <list>
+              <DockerEnvVarImpl>
+                <option name="name" value="SPRING_DATASOURCE_PASSWORD" />
+                <option name="value" value="password" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="SPRING_DATASOURCE_URL" />
+                <option name="value" value="jdbc:postgresql://patient-service-db:5432/db?sslmode=disable" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="SPRING_DATASOURCE_USERNAME" />
+                <option name="value" value="admin_user" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="SPRING_JPA_HIBERNATE_DDL_AUTO" />
+                <option name="value" value="update" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="SPRING_SQL_INTT_MODE" />
+                <option name="value" value="always" />
+              </DockerEnvVarImpl>
+            </list>
+          </option>
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="4000" />
+                <option name="hostPort" value="4000" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="commandLineOptions" value="--network internal" />
+          <option name="sourceFilePath" value="patient-service/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.patient-service-db" />
+      <item itemvalue="Docker.patient-service" />
+      <item itemvalue="HTTP Request.create-patient | Create a new patient" />
+      <item itemvalue="HTTP Request.delete-patient | Delete and entitity" />
+      <item itemvalue="HTTP Request.get-patients | GET request to get all patients" />
+      <item itemvalue="HTTP Request.update-patient | Update an existing patient entity" />
+      <item itemvalue="Spring Boot.PatientServiceApplication" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.delete-patient | Delete and entitity" />
         <item itemvalue="HTTP Request.update-patient | Update an existing patient entity" />
         <item itemvalue="HTTP Request.create-patient | Create a new patient" />
         <item itemvalue="HTTP Request.get-patients | GET request to get all patients" />
@@ -141,7 +239,7 @@
       <option name="presentableId" value="Default" />
       <updated>1769999255152</updated>
       <workItem from="1769999256297" duration="8984000" />
-      <workItem from="1770010654509" duration="27181000" />
+      <workItem from="1770010654509" duration="41351000" />
     </task>
     <task id="LOCAL-00001" summary="Initial microservices project setup">
       <option name="closed" value="true" />
@@ -247,7 +345,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770141799186</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="** add update-patient.http to request for patient update&#10;&#10;** add CreatePatientValidationGroup to handle validation for registered date&#10;&#10;** other fixes">
+      <option name="closed" value="true" />
+      <created>1770148317630</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1770148317630</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,6 +383,7 @@
     <MESSAGE value="** add exception handling for validation errors&#10;** add create-patient to create patient&#10;** other fixes" />
     <MESSAGE value="** add exception handling for EmailAlreadyExistsException" />
     <MESSAGE value="** add updatePatient method in controller to update patient record&#10;&#10;** add updatePatient method to handle the business logic of updating a patient record&#10;&#10;** add exception to handle when a patient record is not found by id&#10;&#10;** update the exception in GlobalExceptionHandler" />
-    <option name="LAST_COMMIT_MESSAGE" value="** add updatePatient method in controller to update patient record&#10;&#10;** add updatePatient method to handle the business logic of updating a patient record&#10;&#10;** add exception to handle when a patient record is not found by id&#10;&#10;** update the exception in GlobalExceptionHandler" />
+    <MESSAGE value="** add update-patient.http to request for patient update&#10;&#10;** add CreatePatientValidationGroup to handle validation for registered date&#10;&#10;** other fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="** add update-patient.http to request for patient update&#10;&#10;** add CreatePatientValidationGroup to handle validation for registered date&#10;&#10;** other fixes" />
   </component>
 </project>
