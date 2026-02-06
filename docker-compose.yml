@@ -1,0 +1,42 @@
+services:
+  patient-service-db:
+    container_name: patient-service-pgsql-db
+    image: postgres:17.5
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-password}
+      POSTGRES_DB: ${POSTGRES_DB:-patient_service_database}
+      PGDATA: /var/lib/postgresql/data
+    ports:
+      - "${POSTGRES_PORT:-9000}:5432"
+    volumes:
+      - postgres:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  patient-service:
+    build:
+      context: ./patient-service
+      dockerfile: Dockerfile
+    environment:
+      SPRING_PROFILES_ACTIVE: dev
+      POSTGRES_URL: patient-service-db
+      POSTGRES_PORT: 5432
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-password}
+      POSTGRES_DB: ${POSTGRES_DB:-patient_service_database}
+    ports:
+      - "${API_PORT:-8080}:8080"
+    depends_on:
+      patient-service-db:
+        condition: service_healthy
+
+volumes:
+  postgres:
+
+networks:
+  default:
+    name: patient_internal_network
