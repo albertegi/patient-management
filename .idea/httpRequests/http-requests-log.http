@@ -1,4 +1,4 @@
-GRPC localhost:9096/BillingService/CreateBillingAccountDELETE http://localhost:4000/api/v1/patients/223e4567-e89b-12d3-a456-426614174014
+GRPC localhost:9096/BillingService/CreateBillingAccountGRPC localhost:9096/BillingService/CreateBillingAccountDELETE http://localhost:4000/api/v1/patients/223e4567-e89b-12d3-a456-426614174014
 User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
 Accept-Encoding: br, deflate, gzip, x-gzip
 Accept: */*
