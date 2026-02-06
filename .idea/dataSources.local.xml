@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal" created-in="IU-242.26775.15">
+    <data-source name="patient-service-DB" uuid="68a6f04a-7a1f-430b-bbcb-8dd0dc8c35b2">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="17" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>admin_user</user-name>
+      <schema-mapping />
+    </data-source>
+  </component>
+</project>

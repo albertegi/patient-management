@@ -33,7 +33,6 @@ services:
     depends_on:
       patient-service-db:
         condition: service_healthy
-
 volumes:
   postgres:
 
