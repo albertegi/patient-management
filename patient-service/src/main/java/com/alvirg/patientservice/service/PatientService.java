@@ -4,6 +4,7 @@ import com.alvirg.patientservice.dto.PatientRequest;
 import com.alvirg.patientservice.dto.PatientResponse;
 import com.alvirg.patientservice.exception.EmailAlreadyExistsException;
 import com.alvirg.patientservice.exception.PatientNotfoundException;
+import com.alvirg.patientservice.grpc.BillingServiceGrpcClient;
 import com.alvirg.patientservice.mapper.PatientMapper;
 import com.alvirg.patientservice.model.Patient;
 import com.alvirg.patientservice.repository.PatientRepository;
@@ -17,15 +18,23 @@ import java.util.UUID;
 @Service
 @RequiredArgsConstructor
 public class PatientService {
+    private final BillingServiceGrpcClient billingServiceGrpcClient;
     private final PatientRepository patientRepository;
     private final PatientMapper mapper;
 
     public PatientResponse createPatient(PatientRequest patientRequest) {
         var emailExists = this.patientRepository.existsByEmail(patientRequest.getEmail());
         if (emailExists) {
-            throw new EmailAlreadyExistsException("A patient with this email already exists " + patientRequest.getEmail());
+            throw new EmailAlreadyExistsException(
+                    "A patient with this email already exists "
+                            + patientRequest.getEmail());
         }
-        return mapper.toPatientResponse(this.patientRepository.save(this.mapper.toPatient(patientRequest)));
+        Patient newPatient = this.patientRepository.save(this.mapper.toPatient(patientRequest));
+
+        billingServiceGrpcClient.createBillingAccount(newPatient.getId().toString(),
+                newPatient.getName(), newPatient.getEmail());
+
+        return mapper.toPatientResponse(newPatient);
     }
 
     public PatientResponse updatePatient(UUID id, PatientRequest patientRequest) {
