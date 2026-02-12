@@ -4,19 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="447b987c-91dd-4ef2-af9f-876edc9685c8" name="Changes" comment="created a protobuf patient event that will be sent">
-      <change afterPath="$PROJECT_DIR$/analytics-service/src/main/java/com/alvirg/analyticsservice/kafka/AnalyticsConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analytics-service/src/main/proto/patient_event.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="447b987c-91dd-4ef2-af9f-876edc9685c8" name="Changes" comment="add a docker file for analytics service">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-requests/patient-service/create-patient.http" beforeDir="false" afterPath="$PROJECT_DIR$/api-requests/patient-service/create-patient.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analytics-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/analytics-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analytics-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/analytics-service/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/kafka/PatientProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/kafka/PatientProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/service/PatientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient-service/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/resources/application-dev.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,49 +59,50 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Docker.patient-service-db.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.patient-service.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.create-patient | Create a new patient.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.delete-patient | Delete and entitity.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.get-patients | GET request to get all patients.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.update-patient | Update an existing patient entity.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.analytics-service [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.analytics-service [compile].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.billing-service [compile].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.patient-service [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.patient-service [compile].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.BillingServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.PatientServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/albertegi/spring-projects/patient-management/analytics-service/src/main/proto&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor.code.editing&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Docker.patient-service-db.executor": "Run",
+    "Docker.patient-service.executor": "Run",
+    "HTTP Request.create-patient | Create a new patient.executor": "Run",
+    "HTTP Request.delete-patient | Delete and entitity.executor": "Run",
+    "HTTP Request.get-patients | GET request to get all patients.executor": "Run",
+    "HTTP Request.update-patient | Update an existing patient entity.executor": "Run",
+    "Maven.analytics-service [clean].executor": "Run",
+    "Maven.analytics-service [compile].executor": "Run",
+    "Maven.billing-service [compile].executor": "Run",
+    "Maven.patient-service [clean].executor": "Run",
+    "Maven.patient-service [compile].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.BillingServiceApplication.executor": "Run",
+    "Spring Boot.PatientServiceApplication.executor": "Run",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "21",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/albertegi/spring-projects/patient-management/analytics-service",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "preferences.editor.code.editing",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/analytics-service" />
       <recent name="$PROJECT_DIR$/analytics-service/src/main/proto" />
       <recent name="$PROJECT_DIR$/patient-service/src/main/resources" />
     </key>
@@ -201,6 +195,7 @@
       <workItem from="1770165059317" duration="47695000" />
       <workItem from="1770677050479" duration="434000" />
       <workItem from="1770746713970" duration="18584000" />
+      <workItem from="1770869886485" duration="1942000" />
     </task>
     <task id="LOCAL-00001" summary="Initial microservices project setup">
       <option name="closed" value="true" />
@@ -354,7 +349,23 @@
       <option name="project" value="LOCAL" />
       <updated>1770856723896</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="** add analytics service&#10;** set up proto file&#10;** add configurations properties&#10;** completed patient producer code">
+      <option name="closed" value="true" />
+      <created>1770870409002</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1770870409002</updated>
+    </task>
+    <task id="LOCAL-00021" summary="add a docker file for analytics service">
+      <option name="closed" value="true" />
+      <created>1770870591143</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1770870591143</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -390,6 +401,8 @@
     <MESSAGE value="** add kafka configuration in the docker compose file&#10;** define kafka topic for the patient service&#10;** add kafka dependencies in the pom file" />
     <MESSAGE value="defined producer" />
     <MESSAGE value="created a protobuf patient event that will be sent" />
-    <option name="LAST_COMMIT_MESSAGE" value="created a protobuf patient event that will be sent" />
+    <MESSAGE value="** add analytics service&#10;** set up proto file&#10;** add configurations properties&#10;** completed patient producer code" />
+    <MESSAGE value="add a docker file for analytics service" />
+    <option name="LAST_COMMIT_MESSAGE" value="add a docker file for analytics service" />
   </component>
 </project>
