@@ -8,3 +8,4 @@ server:
 grpc:
   server:
     port: 9096
+
