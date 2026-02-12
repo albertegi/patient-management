@@ -3,11 +3,11 @@ POST http://localhost:8085/api/v1/patients
 Content-Type: application/json
 
 {
-  "name": "Vivian BillingAccount",
-  "email": "vivianbilling@email.com",
+  "name": "Precious Bowei",
+  "email": "preciousbowei@email.com",
   "address": "Pipkin Court 2",
-  "dateOfBirth": "1980-09-24",
-  "registeredDate": "2024-02-21"
+  "dateOfBirth": "1978-09-21",
+  "registeredDate": "2024-02-24"
 }
 
 ###

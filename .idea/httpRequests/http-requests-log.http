@@ -1,5 +1,24 @@
 POST http://localhost:8085/api/v1/patients
 Content-Type: application/json
+Content-Length: 164
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Precious Bowei",
+  "email": "preciousbowei@email.com",
+  "address": "Pipkin Court 2",
+  "dateOfBirth": "1978-09-21",
+  "registeredDate": "2024-02-24"
+}
+
+<> 2026-02-12T012840.201.json
+
+###
+
+POST http://localhost:8085/api/v1/patients
+Content-Type: application/json
 Content-Length: 171
 User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
 Accept-Encoding: br, deflate, gzip, x-gzip

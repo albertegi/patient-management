@@ -4,8 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="447b987c-91dd-4ef2-af9f-876edc9685c8" name="Changes" comment="defined producer">
-      <change afterPath="$PROJECT_DIR$/patient-service/src/main/proto/patient_event.proto" afterDir="false" />
+    <list default="true" id="447b987c-91dd-4ef2-af9f-876edc9685c8" name="Changes" comment="created a protobuf patient event that will be sent">
+      <change afterPath="$PROJECT_DIR$/analytics-service/src/main/java/com/alvirg/analyticsservice/kafka/AnalyticsConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/src/main/proto/patient_event.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-requests/patient-service/create-patient.http" beforeDir="false" afterPath="$PROJECT_DIR$/api-requests/patient-service/create-patient.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/kafka/PatientProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/kafka/PatientProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/service/PatientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient-service/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/resources/application-dev.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +74,11 @@
     &quot;HTTP Request.delete-patient | Delete and entitity.executor&quot;: &quot;Run&quot;,
     &quot;HTTP Request.get-patients | GET request to get all patients.executor&quot;: &quot;Run&quot;,
     &quot;HTTP Request.update-patient | Update an existing patient entity.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.analytics-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.analytics-service [compile].executor&quot;: &quot;Run&quot;,
     &quot;Maven.billing-service [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.patient-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.patient-service [compile].executor&quot;: &quot;Run&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
     &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
@@ -76,12 +91,13 @@
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/albertegi/spring-projects/patient-management/patient-service/src/main/resources&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/albertegi/spring-projects/patient-management/analytics-service/src/main/proto&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor.code.editing&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -93,12 +109,23 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/analytics-service/src/main/proto" />
       <recent name="$PROJECT_DIR$/patient-service/src/main/resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/controller" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
   </component>
   <component name="RunManager" selected="Spring Boot.BillingServiceApplication">
     <configuration name="create-patient | Create a new patient" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/create-patient.http" requestIdentifier="Create a new patient" runType="Run single request">
@@ -112,6 +139,13 @@
     </configuration>
     <configuration name="update-patient | Update an existing patient entity" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/update-patient.http" requestIdentifier="Update an existing patient entity" runType="Run single request">
       <method v="2" />
+    </configuration>
+    <configuration name="AnalyticsServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="analytics-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.alvirg.analyticsservice.AnalyticsServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="BillingServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="billing-service" />
@@ -133,14 +167,15 @@
       <item itemvalue="HTTP Request.delete-patient | Delete and entitity" />
       <item itemvalue="HTTP Request.get-patients | GET request to get all patients" />
       <item itemvalue="HTTP Request.update-patient | Update an existing patient entity" />
+      <item itemvalue="Spring Boot.AnalyticsServiceApplication" />
       <item itemvalue="Spring Boot.BillingServiceApplication" />
       <item itemvalue="Spring Boot.PatientServiceApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.create-patient | Create a new patient" />
         <item itemvalue="HTTP Request.delete-patient | Delete and entitity" />
         <item itemvalue="HTTP Request.update-patient | Update an existing patient entity" />
-        <item itemvalue="HTTP Request.create-patient | Create a new patient" />
         <item itemvalue="HTTP Request.get-patients | GET request to get all patients" />
       </list>
     </recent_temporary>
@@ -165,7 +200,7 @@
       <workItem from="1770010654509" duration="41351000" />
       <workItem from="1770165059317" duration="47695000" />
       <workItem from="1770677050479" duration="434000" />
-      <workItem from="1770746713970" duration="10705000" />
+      <workItem from="1770746713970" duration="18584000" />
     </task>
     <task id="LOCAL-00001" summary="Initial microservices project setup">
       <option name="closed" value="true" />
@@ -311,7 +346,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770855952451</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="created a protobuf patient event that will be sent">
+      <option name="closed" value="true" />
+      <created>1770856723896</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1770856723896</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -346,6 +389,7 @@
     <MESSAGE value="** several fixes and updates in the Dockerfile, docker-compose.yml and application-dev.yml files" />
     <MESSAGE value="** add kafka configuration in the docker compose file&#10;** define kafka topic for the patient service&#10;** add kafka dependencies in the pom file" />
     <MESSAGE value="defined producer" />
-    <option name="LAST_COMMIT_MESSAGE" value="defined producer" />
+    <MESSAGE value="created a protobuf patient event that will be sent" />
+    <option name="LAST_COMMIT_MESSAGE" value="created a protobuf patient event that will be sent" />
   </component>
 </project>

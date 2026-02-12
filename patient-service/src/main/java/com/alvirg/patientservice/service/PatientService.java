@@ -5,10 +5,12 @@ import com.alvirg.patientservice.dto.PatientResponse;
 import com.alvirg.patientservice.exception.EmailAlreadyExistsException;
 import com.alvirg.patientservice.exception.PatientNotfoundException;
 import com.alvirg.patientservice.grpc.BillingServiceGrpcClient;
+import com.alvirg.patientservice.kafka.PatientProducer;
 import com.alvirg.patientservice.mapper.PatientMapper;
 import com.alvirg.patientservice.model.Patient;
 import com.alvirg.patientservice.repository.PatientRepository;
 import lombok.RequiredArgsConstructor;
+import org.apache.kafka.clients.producer.KafkaProducer;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
@@ -21,6 +23,7 @@ public class PatientService {
     private final BillingServiceGrpcClient billingServiceGrpcClient;
     private final PatientRepository patientRepository;
     private final PatientMapper mapper;
+    private final PatientProducer patientProducer;
 
     public PatientResponse createPatient(PatientRequest patientRequest) {
         var emailExists = this.patientRepository.existsByEmail(patientRequest.getEmail());
@@ -33,6 +36,8 @@ public class PatientService {
 
         billingServiceGrpcClient.createBillingAccount(newPatient.getId().toString(),
                 newPatient.getName(), newPatient.getEmail());
+
+        patientProducer.sendEvent(newPatient);
 
         return mapper.toPatientResponse(newPatient);
     }

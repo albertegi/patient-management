@@ -3,9 +3,9 @@ spring:
     producer:
       bootstrap-servers: localhost:9092
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
-      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
-      properties:
-        spring.json.type.mapping: paymentConfirmation:com.alvirg.ecommerce.notification.PaymentNotificationRequest
+      value-serializer: org.apache.kafka.common.serialization.ByteArraySerializer
+#      we need to add the address of our kafka broker service. so the kafka producer can connect to it
+#      using environment variables since it's going to change between environments (e.g. dev, prod)
 
   application:
     name: patient-service
