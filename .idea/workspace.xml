@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="447b987c-91dd-4ef2-af9f-876edc9685c8" name="Changes" comment="** several fixes and updates in the Dockerfile, docker-compose.yml and application-dev.yml files">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/billing-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/billing-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient-service/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/resources/application-dev.yml" afterDir="false" />
+    <list default="true" id="447b987c-91dd-4ef2-af9f-876edc9685c8" name="Changes" comment="defined producer">
+      <change afterPath="$PROJECT_DIR$/patient-service/src/main/proto/patient_event.proto" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +165,7 @@
       <workItem from="1770010654509" duration="41351000" />
       <workItem from="1770165059317" duration="47695000" />
       <workItem from="1770677050479" duration="434000" />
-      <workItem from="1770746713970" duration="8533000" />
+      <workItem from="1770746713970" duration="10705000" />
     </task>
     <task id="LOCAL-00001" summary="Initial microservices project setup">
       <option name="closed" value="true" />
@@ -301,7 +295,23 @@
       <option name="project" value="LOCAL" />
       <updated>1770361953738</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="** add kafka configuration in the docker compose file&#10;** define kafka topic for the patient service&#10;** add kafka dependencies in the pom file">
+      <option name="closed" value="true" />
+      <created>1770855005289</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1770855005290</updated>
+    </task>
+    <task id="LOCAL-00018" summary="defined producer">
+      <option name="closed" value="true" />
+      <created>1770855952451</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1770855952451</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,6 +344,8 @@
     <MESSAGE value="** add update-patient.http to request for patient update&#10;&#10;** add CreatePatientValidationGroup to handle validation for registered date&#10;&#10;** other fixes" />
     <MESSAGE value="fixes&#10;&#10;** add CreatePatientValidationGroup to handle validation for registered date&#10;&#10;** other fixes" />
     <MESSAGE value="** several fixes and updates in the Dockerfile, docker-compose.yml and application-dev.yml files" />
-    <option name="LAST_COMMIT_MESSAGE" value="** several fixes and updates in the Dockerfile, docker-compose.yml and application-dev.yml files" />
+    <MESSAGE value="** add kafka configuration in the docker compose file&#10;** define kafka topic for the patient service&#10;** add kafka dependencies in the pom file" />
+    <MESSAGE value="defined producer" />
+    <option name="LAST_COMMIT_MESSAGE" value="defined producer" />
   </component>
 </project>
