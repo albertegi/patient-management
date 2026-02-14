@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="447b987c-91dd-4ef2-af9f-876edc9685c8" name="Changes" comment="** Annotation the AuthController class with rest controller tag&#10;** create a method to handle the post endpoint&#10;** add an operation summary tag from swagger">
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/alvirg/authservice/service/AuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/alvirg/authservice/dto/LoginRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/alvirg/authservice/dto/LoginRequest.java" afterDir="false" />
-    </list>
+    <list default="true" id="447b987c-91dd-4ef2-af9f-876edc9685c8" name="Changes" comment="** Create UserRepository to interact with the database to fetch, retrieve, update and save data" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,10 +15,10 @@
       <list>
         <option value="Record" />
         <option value="Exception" />
-        <option value="Interface" />
         <option value="HTTP Request" />
         <option value="Dockerfile" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -217,7 +213,7 @@
       <workItem from="1770165059317" duration="47695000" />
       <workItem from="1770677050479" duration="434000" />
       <workItem from="1770746713970" duration="18584000" />
-      <workItem from="1770869886485" duration="61452000" />
+      <workItem from="1770869886485" duration="62230000" />
     </task>
     <task id="LOCAL-00001" summary="Initial microservices project setup">
       <option name="closed" value="true" />
@@ -451,7 +447,31 @@
       <option name="project" value="LOCAL" />
       <updated>1771110481675</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="** Create AuthService class to handle the business logic to authenticate the user and validating the user credentials and returning a token">
+      <option name="closed" value="true" />
+      <created>1771111290225</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1771111290225</updated>
+    </task>
+    <task id="LOCAL-00031" summary="** Create UserService to handle all user services and business logic">
+      <option name="closed" value="true" />
+      <created>1771111361031</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1771111361032</updated>
+    </task>
+    <task id="LOCAL-00032" summary="** Create UserRepository to interact with the database to fetch, retrieve, update and save data">
+      <option name="closed" value="true" />
+      <created>1771111408635</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1771111408635</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -469,9 +489,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="** fix dependencies in pom file&#10;** set up h2 database configuration in application.properties file to connect to in memory database" />
-    <MESSAGE value="add a demo data to insert into the in memory database" />
-    <MESSAGE value="add service, response and mapper classes to the application" />
     <MESSAGE value="add PatientController class and a getPatients method to get all patients in the system" />
     <MESSAGE value="add inbuilt request call api get-patients.http to make request calls" />
     <MESSAGE value="add PatientRequest and required attributes and validation" />
@@ -494,7 +511,10 @@
     <MESSAGE value="** add one property called token to the LoginResponse" />
     <MESSAGE value="** create an AuthController class that will contain all the request handler methods that will handle all the auth related requests" />
     <MESSAGE value="** Annotation the AuthController class with rest controller tag&#10;** create a method to handle the post endpoint&#10;** add an operation summary tag from swagger" />
-    <option name="LAST_COMMIT_MESSAGE" value="** Annotation the AuthController class with rest controller tag&#10;** create a method to handle the post endpoint&#10;** add an operation summary tag from swagger" />
+    <MESSAGE value="** Create AuthService class to handle the business logic to authenticate the user and validating the user credentials and returning a token" />
+    <MESSAGE value="** Create UserService to handle all user services and business logic" />
+    <MESSAGE value="** Create UserRepository to interact with the database to fetch, retrieve, update and save data" />
+    <option name="LAST_COMMIT_MESSAGE" value="** Create UserRepository to interact with the database to fetch, retrieve, update and save data" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
