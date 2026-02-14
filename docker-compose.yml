@@ -12,10 +12,31 @@ services:
     volumes:
       - postgres:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
+      test: ["CMD-SHELL", "pg_isready -U $POSTGRES_USER -d $POSTGRES_DB"]
       interval: 5s
       timeout: 3s
       retries: 20
+
+
+  auth-service-db:
+    container_name: auth-service-pgsql-db
+    image: postgres:17.5
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-password}
+      POSTGRES_DB: ${AUTH_SERVICE_DB:-auth_service_database}
+      PGDATA: /var/lib/postgresql/data
+    ports:
+      - "${AUTH_SERVICE_PORT:-5432}:5432"
+    volumes:
+      - auth_service:/var/lib/postgresql/data
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U $POSTGRES_USER -d $AUTH_SERVICE_DB" ]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+
 
   patient-service:
     image: patient-service:latest
@@ -50,6 +71,34 @@ services:
         condition: service_started
       kafka:
         condition: service_started
+
+
+  auth-service:
+    image: auth-service:latest
+    build:
+      context: ./auth-service
+      dockerfile: Dockerfile
+    environment:
+      SPRING_PROFILES_ACTIVE: dev
+#      SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:9092
+      AUTH_SERVICE_URL: auth-service-db
+      POSTGRES_PORT: 5432
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-password}
+      AUTH_SERVICE_DB: ${AUTH_SERVICE_DB:-auth_service_database}
+    ports:
+      - "${AUTH_SERVICE_API_PORT:-8088}:8088"
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:8085/actuator/health" ]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+      start_period: 30s
+    depends_on:
+      auth-service-db:
+        condition: service_healthy
+
+
 
   billing-service:
     image: billing-service:latest
@@ -127,3 +176,4 @@ networks:
 
 volumes:
   postgres:
+  auth_service:
