@@ -74,12 +74,25 @@ services:
       SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:9092
       SPRING_KAFKA_CONSUMER_AUTO_OFFSET_RESET: earliest
       SPRING_KAFKA_CONSUMER_GROUP_ID: analytics-service
-
     depends_on:
       kafka:
         condition: service_started
       patient-service:
         condition: service_healthy
+
+  api-gateway:
+    image: api-gateway:latest
+    build:
+      context: ./api-gateway
+      dockerfile: Dockerfile
+    ports:
+      - "${API_GATEWAY_PORT:-8333}:8333"
+    environment:
+      SPRING_PROFILES_ACTIVE: dev
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:8333/actuator/health" ]
+      interval: 30s
+      retries: 3
 
   zookeeper:
     image: confluentinc/cp-zookeeper:7.5.0

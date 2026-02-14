@@ -3,8 +3,8 @@ POST http://localhost:8085/api/v1/patients
 Content-Type: application/json
 
 {
-  "name": "Albert CW",
-  "email": "cw@email.com",
+  "name": "Albert CW3",
+  "email": "cw3@email.com",
   "address": "Pipkin Court 38",
   "dateOfBirth": "1978-09-21",
   "registeredDate": "2024-02-24"

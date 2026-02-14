@@ -4,30 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="447b987c-91dd-4ef2-af9f-876edc9685c8" name="Changes" comment="** set up analytics service as a docker image in docker compose file">
-      <change afterPath="$PROJECT_DIR$/analytics-service/src/main/resources/application-dev.yml" afterDir="false" />
+    <list default="true" id="447b987c-91dd-4ef2-af9f-876edc9685c8" name="Changes" comment="fixes">
+      <change afterPath="$PROJECT_DIR$/api-gateway/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-02T080816.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-02T081007.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-02T092447.500.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-02T093028.500.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-02T093518.201.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-02T093854.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-02T173516.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-02T173553.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-02T173817.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-02T174100.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-02T174421.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-02T174520.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-02T174544.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-02T174606.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-02T181748.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-02T181810.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-03T181547.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-03T181720.202.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-03T181855.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-03T181940.400.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analytics-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/analytics-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analytics-service/src/main/java/com/alvirg/analyticsservice/AnalyticsServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/analytics-service/src/main/java/com/alvirg/analyticsservice/AnalyticsServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analytics-service/src/main/java/com/alvirg/analyticsservice/kafka/AnalyticsConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/analytics-service/src/main/java/com/alvirg/analyticsservice/kafka/AnalyticsConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analytics-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/analytics-service/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-requests/patient-service/create-patient.http" beforeDir="false" afterPath="$PROJECT_DIR$/api-requests/patient-service/create-patient.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/billing-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-requests/patient-service/get-patients.http" beforeDir="false" afterPath="$PROJECT_DIR$/api-requests/patient-service/get-patients.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/config/KafkaPatientConfigTopic.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/config/KafkaPatientConfigTopic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/kafka/PatientProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/kafka/PatientProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/service/PatientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient-service/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/alvirg/patientservice/controller/PatientController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,14 +106,14 @@
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "21",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/albertegi/spring-projects/patient-management/analytics-service/src/main/resources",
+    "last_opened_file_path": "/Users/albertegi/spring-projects/patient-management/api-gateway/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "preferences.editor.code.editing",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -121,10 +124,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/api-gateway/src/main/resources" />
+      <recent name="$PROJECT_DIR$/api-gateway" />
       <recent name="$PROJECT_DIR$/analytics-service/src/main/resources" />
       <recent name="$PROJECT_DIR$/analytics-service" />
       <recent name="$PROJECT_DIR$/analytics-service/src/main/proto" />
-      <recent name="$PROJECT_DIR$/patient-service/src/main/resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -164,6 +168,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="api-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.alvirg.apigateway.ApiGatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BillingServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="billing-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.alvirg.billingservice.BillingServiceApplication" />
@@ -185,17 +196,18 @@
       <item itemvalue="HTTP Request.delete-patient | Delete and entitity" />
       <item itemvalue="HTTP Request.get-patients | GET request to get all patients" />
       <item itemvalue="HTTP Request.update-patient | Update an existing patient entity" />
+      <item itemvalue="Spring Boot.ApiGatewayApplication" />
       <item itemvalue="Spring Boot.AnalyticsServiceApplication" />
       <item itemvalue="Spring Boot.BillingServiceApplication" />
       <item itemvalue="Spring Boot.PatientServiceApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.get-patients | GET request to get all patients" />
         <item itemvalue="HTTP Request.create-patient | Create a new patient (patient-service publishes to patient-topic; analytics-service consumes and logs the event)" />
         <item itemvalue="HTTP Request.create-patient | Create a new patient" />
         <item itemvalue="HTTP Request.delete-patient | Delete and entitity" />
         <item itemvalue="HTTP Request.update-patient | Update an existing patient entity" />
-        <item itemvalue="HTTP Request.get-patients | GET request to get all patients" />
       </list>
     </recent_temporary>
   </component>
@@ -220,7 +232,7 @@
       <workItem from="1770165059317" duration="47695000" />
       <workItem from="1770677050479" duration="434000" />
       <workItem from="1770746713970" duration="18584000" />
-      <workItem from="1770869886485" duration="38463000" />
+      <workItem from="1770869886485" duration="49332000" />
     </task>
     <task id="LOCAL-00001" summary="Initial microservices project setup">
       <option name="closed" value="true" />
@@ -398,7 +410,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770872075200</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="fixes">
+      <option name="closed" value="true" />
+      <created>1771039664635</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1771039664635</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -437,6 +457,11 @@
     <MESSAGE value="** add analytics service&#10;** set up proto file&#10;** add configurations properties&#10;** completed patient producer code" />
     <MESSAGE value="add a docker file for analytics service" />
     <MESSAGE value="** set up analytics service as a docker image in docker compose file" />
-    <option name="LAST_COMMIT_MESSAGE" value="** set up analytics service as a docker image in docker compose file" />
+    <MESSAGE value="fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixes" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
