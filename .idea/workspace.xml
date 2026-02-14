@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="447b987c-91dd-4ef2-af9f-876edc9685c8" name="Changes" comment="** create User entity and its attributes&#10;** add a data.sql data seeding class&#10;** add a Dockerfile and update docker-compose.yml with auth-service&#10;** add login request and response dtos" />
+    <list default="true" id="447b987c-91dd-4ef2-af9f-876edc9685c8" name="Changes" comment="** Annotation the AuthController class with rest controller tag&#10;** create a method to handle the post endpoint&#10;** add an operation summary tag from swagger">
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/alvirg/authservice/service/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/alvirg/authservice/dto/LoginRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/alvirg/authservice/dto/LoginRequest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -213,7 +217,7 @@
       <workItem from="1770165059317" duration="47695000" />
       <workItem from="1770677050479" duration="434000" />
       <workItem from="1770746713970" duration="18584000" />
-      <workItem from="1770869886485" duration="58865000" />
+      <workItem from="1770869886485" duration="61452000" />
     </task>
     <task id="LOCAL-00001" summary="Initial microservices project setup">
       <option name="closed" value="true" />
@@ -415,7 +419,39 @@
       <option name="project" value="LOCAL" />
       <updated>1771108033968</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="** add annotations to LoginResponse">
+      <option name="closed" value="true" />
+      <created>1771108260227</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1771108260227</updated>
+    </task>
+    <task id="LOCAL-00027" summary="** add one property called token to the LoginResponse">
+      <option name="closed" value="true" />
+      <created>1771108386185</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1771108386185</updated>
+    </task>
+    <task id="LOCAL-00028" summary="** create an AuthController class that will contain all the request handler methods that will handle all the auth related requests">
+      <option name="closed" value="true" />
+      <created>1771108658601</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1771108658601</updated>
+    </task>
+    <task id="LOCAL-00029" summary="** Annotation the AuthController class with rest controller tag&#10;** create a method to handle the post endpoint&#10;** add an operation summary tag from swagger">
+      <option name="closed" value="true" />
+      <created>1771110481675</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1771110481675</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -433,9 +469,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Initial microservices project setup" />
-    <MESSAGE value="add Patient class" />
-    <MESSAGE value="add attributes and validation to Patient model" />
     <MESSAGE value="** fix dependencies in pom file&#10;** set up h2 database configuration in application.properties file to connect to in memory database" />
     <MESSAGE value="add a demo data to insert into the in memory database" />
     <MESSAGE value="add service, response and mapper classes to the application" />
@@ -457,7 +490,11 @@
     <MESSAGE value="fixes" />
     <MESSAGE value="complete set up and dockerization of api-gateway" />
     <MESSAGE value="** create User entity and its attributes&#10;** add a data.sql data seeding class&#10;** add a Dockerfile and update docker-compose.yml with auth-service&#10;** add login request and response dtos" />
-    <option name="LAST_COMMIT_MESSAGE" value="** create User entity and its attributes&#10;** add a data.sql data seeding class&#10;** add a Dockerfile and update docker-compose.yml with auth-service&#10;** add login request and response dtos" />
+    <MESSAGE value="** add annotations to LoginResponse" />
+    <MESSAGE value="** add one property called token to the LoginResponse" />
+    <MESSAGE value="** create an AuthController class that will contain all the request handler methods that will handle all the auth related requests" />
+    <MESSAGE value="** Annotation the AuthController class with rest controller tag&#10;** create a method to handle the post endpoint&#10;** add an operation summary tag from swagger" />
+    <option name="LAST_COMMIT_MESSAGE" value="** Annotation the AuthController class with rest controller tag&#10;** create a method to handle the post endpoint&#10;** add an operation summary tag from swagger" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
