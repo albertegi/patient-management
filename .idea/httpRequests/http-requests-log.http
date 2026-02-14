@@ -1,5 +1,385 @@
 POST http://localhost:8085/api/v1/patients
 Content-Type: application/json
+Content-Length: 149
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Albert CW",
+  "email": "cw@email.com",
+  "address": "Pipkin Court 38",
+  "dateOfBirth": "1978-09-21",
+  "registeredDate": "2024-02-24"
+}
+
+<> 2026-02-14T032538.201.json
+
+###
+
+POST http://localhost:8085/api/v1/patients
+Content-Type: application/json
+Content-Length: 161
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Precious Albert fi",
+  "email": "albifi@email.com",
+  "address": "Pipkin Court 2",
+  "dateOfBirth": "1978-09-21",
+  "registeredDate": "2024-02-24"
+}
+
+<> 2026-02-14T011758.201.json
+
+###
+
+POST http://localhost:8085/api/v1/patients
+Content-Type: application/json
+Content-Length: 168
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Precious Albert finalftt",
+  "email": "albiftt@email.com",
+  "address": "Pipkin Court 2",
+  "dateOfBirth": "1978-09-21",
+  "registeredDate": "2024-02-24"
+}
+
+<> 2026-02-14T010725.201.json
+
+###
+
+POST http://localhost:8085/api/v1/patients
+Content-Type: application/json
+Content-Length: 166
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Precious Albert finalft",
+  "email": "albift@email.com",
+  "address": "Pipkin Court 2",
+  "dateOfBirth": "1978-09-21",
+  "registeredDate": "2024-02-24"
+}
+
+<> 2026-02-13T055523.201.json
+
+###
+
+POST http://localhost:8085/api/v1/patients
+Content-Type: application/json
+Content-Length: 164
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Precious Albert finalf",
+  "email": "albif@email.com",
+  "address": "Pipkin Court 2",
+  "dateOfBirth": "1978-09-21",
+  "registeredDate": "2024-02-24"
+}
+
+<> 2026-02-13T055454.201.json
+
+###
+
+POST http://localhost:8085/api/v1/patients
+Content-Type: application/json
+Content-Length: 162
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Precious Albert final",
+  "email": "albi@email.com",
+  "address": "Pipkin Court 2",
+  "dateOfBirth": "1978-09-21",
+  "registeredDate": "2024-02-24"
+}
+
+<> 2026-02-13T051613.201.json
+
+###
+
+POST http://localhost:8085/api/v1/patients
+Content-Type: application/json
+Content-Length: 167
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Precious Kafka15 final",
+  "email": "kafka15f@email.com",
+  "address": "Pipkin Court 2",
+  "dateOfBirth": "1978-09-21",
+  "registeredDate": "2024-02-24"
+}
+
+<> 2026-02-13T050533.201.json
+
+###
+
+POST http://localhost:8085/api/v1/patients
+Content-Type: application/json
+Content-Length: 160
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Precious Kafka15",
+  "email": "kafka15@email.com",
+  "address": "Pipkin Court 2",
+  "dateOfBirth": "1978-09-21",
+  "registeredDate": "2024-02-24"
+}
+
+<> 2026-02-13T050000.201.json
+
+###
+
+POST http://localhost:8085/api/v1/patients
+Content-Type: application/json
+Content-Length: 160
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Precious Kafka14",
+  "email": "kafka14@email.com",
+  "address": "Pipkin Court 2",
+  "dateOfBirth": "1978-09-21",
+  "registeredDate": "2024-02-24"
+}
+
+<> 2026-02-13T045130.201.json
+
+###
+
+POST http://localhost:8085/api/v1/patients
+Content-Type: application/json
+Content-Length: 160
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Precious Kafka13",
+  "email": "kafka13@email.com",
+  "address": "Pipkin Court 2",
+  "dateOfBirth": "1978-09-21",
+  "registeredDate": "2024-02-24"
+}
+
+<> 2026-02-13T045044.201.json
+
+###
+
+POST http://localhost:8085/api/v1/patients
+Content-Type: application/json
+Content-Length: 160
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Precious Kafka12",
+  "email": "kafka12@email.com",
+  "address": "Pipkin Court 2",
+  "dateOfBirth": "1978-09-21",
+  "registeredDate": "2024-02-24"
+}
+
+<> 2026-02-13T044722.201.json
+
+###
+
+POST http://localhost:8085/api/v1/patients
+Content-Type: application/json
+Content-Length: 160
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Precious Kafka11",
+  "email": "kafka11@email.com",
+  "address": "Pipkin Court 2",
+  "dateOfBirth": "1978-09-21",
+  "registeredDate": "2024-02-24"
+}
+
+<> 2026-02-13T044341.201.json
+
+###
+
+POST http://localhost:8085/api/v1/patients
+Content-Type: application/json
+Content-Length: 160
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Precious Kafka10",
+  "email": "kafka10@email.com",
+  "address": "Pipkin Court 2",
+  "dateOfBirth": "1978-09-21",
+  "registeredDate": "2024-02-24"
+}
+
+<> 2026-02-13T043150.201.json
+
+###
+
+POST http://localhost:8085/api/v1/patients
+Content-Type: application/json
+Content-Length: 158
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Precious Kafka9",
+  "email": "kafka9@email.com",
+  "address": "Pipkin Court 2",
+  "dateOfBirth": "1978-09-21",
+  "registeredDate": "2024-02-24"
+}
+
+<> 2026-02-13T042936.201.json
+
+###
+
+POST http://localhost:8085/api/v1/patients
+Content-Type: application/json
+Content-Length: 158
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Precious Kafka8",
+  "email": "kafka8@email.com",
+  "address": "Pipkin Court 2",
+  "dateOfBirth": "1978-09-21",
+  "registeredDate": "2024-02-24"
+}
+
+<> 2026-02-13T042809.201.json
+
+###
+
+POST http://localhost:8085/api/v1/patients
+Content-Type: application/json
+Content-Length: 158
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Precious Kafka7",
+  "email": "kafka7@email.com",
+  "address": "Pipkin Court 2",
+  "dateOfBirth": "1978-09-21",
+  "registeredDate": "2024-02-24"
+}
+
+<> 2026-02-13T042054.201.json
+
+###
+
+POST http://localhost:8085/api/v1/patients
+Content-Type: application/json
+Content-Length: 158
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Precious Kafka6",
+  "email": "kafka6@email.com",
+  "address": "Pipkin Court 2",
+  "dateOfBirth": "1978-09-21",
+  "registeredDate": "2024-02-24"
+}
+
+<> 2026-02-13T040938.201.json
+
+###
+
+POST http://localhost:8085/api/v1/patients
+Content-Type: application/json
+Content-Length: 158
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Precious Kafka5",
+  "email": "kafka5@email.com",
+  "address": "Pipkin Court 2",
+  "dateOfBirth": "1978-09-21",
+  "registeredDate": "2024-02-24"
+}
+
+<> 2026-02-13T034335.201.json
+
+###
+
+POST http://localhost:8085/api/v1/patients
+Content-Type: application/json
+Content-Length: 158
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Precious Kafka3",
+  "email": "kafka3@email.com",
+  "address": "Pipkin Court 2",
+  "dateOfBirth": "1978-09-21",
+  "registeredDate": "2024-02-24"
+}
+
+<> 2026-02-13T033544.201.json
+
+###
+
+POST http://localhost:8085/api/v1/patients
+Content-Type: application/json
+Content-Length: 156
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Precious Kafka",
+  "email": "kafka@email.com",
+  "address": "Pipkin Court 2",
+  "dateOfBirth": "1978-09-21",
+  "registeredDate": "2024-02-24"
+}
+
+<> 2026-02-13T023014.201.json
+
+###
+
+POST http://localhost:8085/api/v1/patients
+Content-Type: application/json
 Content-Length: 164
 User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
 Accept-Encoding: br, deflate, gzip, x-gzip
@@ -537,190 +917,6 @@ Accept: */*
 }
 
 <> 2026-02-02T173516.400.json
-
-###
-
-POST http://localhost:4000/api/v1/patients
-Content-Type: application/json
-Content-Length: 135
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "Vivian Egi",
-  "email": "",
-  "address": "Pipkin Court",
-  "dateOfBirth": "1995-09-24",
-  "registeredDate": "2024-02-28"
-}
-
-<> 2026-02-02T171738.400.json
-
-###
-
-POST http://localhost:4000/api/v1/patients
-Content-Type: application/json
-Content-Length: 135
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "Vivian Egi",
-  "email": "",
-  "address": "Pipkin Court",
-  "dateOfBirth": "1995-09-24",
-  "registeredDate": "2024-02-28"
-}
-
-###
-
-POST http://localhost:4000/api/v1/patients
-Content-Type: application/json
-Content-Length: 135
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "Vivian Egi",
-  "email": "",
-  "address": "Pipkin Court",
-  "dateOfBirth": "1995-09-24",
-  "registeredDate": "2024-02-28"
-}
-
-###
-
-POST http://localhost:4000/api/v1/patients
-Content-Type: application/json
-Content-Length: 135
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "Vivian Egi",
-  "email": "",
-  "address": "Pipkin Court",
-  "dateOfBirth": "1995-09-24",
-  "registeredDate": "2024-02-28"
-}
-
-###
-
-POST http://localhost:4000/api/v1/patients
-Content-Type: application/json
-Content-Length: 135
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "Vivian Egi",
-  "email": "",
-  "address": "Pipkin Court",
-  "dateOfBirth": "1995-09-24",
-  "registeredDate": "2024-02-28"
-}
-
-###
-
-POST http://localhost:4000/api/v1/patients
-Content-Type: application/json
-Content-Length: 135
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "Vivian Egi",
-  "email": "",
-  "address": "Pipkin Court",
-  "dateOfBirth": "1995-09-24",
-  "registeredDate": "2024-02-28"
-}
-
-<> 2026-02-02T093854.400.json
-
-###
-
-POST http://localhost:4000/api/v1/patients
-Content-Type: application/json
-Content-Length: 154
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "Albert Egi",
-  "email": "albertegi@email.com",
-  "address": "Pipkin Court",
-  "dateOfBirth": "1995-09-24",
-  "registeredDate": "2024-02-28"
-}
-
-<> 2026-02-02T093518.201.json
-
-###
-
-POST http://localhost:4000/api/v1/patients
-Content-Type: application/json
-Content-Length: 154
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "Albert Egi",
-  "email": "albertegi@email.com",
-  "address": "Pipkin Court",
-  "dateOfBirth": "14-09-2025",
-  "registeredDate": "2024-02-28"
-}
-
-<> 2026-02-02T093028.500.json
-
-###
-
-POST http://localhost:4000/api/v1/patients
-Content-Type: application/json
-Content-Length: 154
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "Albert Egi",
-  "email": "albertegi@email.com",
-  "address": "Pipkin Court",
-  "dateOfBirth": "14-09-2025",
-  "registeredDate": "2026-02-28"
-}
-
-<> 2026-02-02T092447.500.json
-
-###
-
-GET http://localhost:4000/api/v1/patients
-Content-Type: application/json
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2026-02-02T081007.200.json
-
-###
-
-GET http://localhost:4000/api/v1/patients
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2026-02-02T080816.200.json
 
 ###
 

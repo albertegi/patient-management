@@ -10,7 +10,6 @@ import com.alvirg.patientservice.mapper.PatientMapper;
 import com.alvirg.patientservice.model.Patient;
 import com.alvirg.patientservice.repository.PatientRepository;
 import lombok.RequiredArgsConstructor;
-import org.apache.kafka.clients.producer.KafkaProducer;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;

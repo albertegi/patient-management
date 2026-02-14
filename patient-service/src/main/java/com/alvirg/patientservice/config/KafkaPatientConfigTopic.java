@@ -12,6 +12,8 @@ public class KafkaPatientConfigTopic {
     public NewTopic patientTopic(){
         return TopicBuilder
                 .name("patient-topic")
+                .partitions(1)
+                .replicas(1)
                 .build();
     }
 }

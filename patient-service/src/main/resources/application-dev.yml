@@ -1,11 +1,11 @@
 spring:
   kafka:
+    bootstrap-servers: ${SPRING_KAFKA_BOOTSTRAP_SERVERS:kafka:9092}
+    admin:
+      auto-create: true
     producer:
-      bootstrap-servers: localhost:9092
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.apache.kafka.common.serialization.ByteArraySerializer
-#      we need to add the address of our kafka broker service. so the kafka producer can connect to it
-#      using environment variables since it's going to change between environments (e.g. dev, prod)
 
   application:
     name: patient-service
@@ -35,3 +35,5 @@ logging:
 
 server:
   port: 8085
+
+

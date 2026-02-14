@@ -12,19 +12,20 @@ import patient.events.PatientEvent;
 @Slf4j
 public class AnalyticsConsumer {
 
-    @KafkaListener(topics = "patient-topic", groupId = "analytics-service")
-    public void consumeEvent(byte[] event){
+    @KafkaListener(topics = "patient-topic", groupId = "${spring.kafka.consumer.group-id:analytics-service}")
+    public void consumeEvent(byte[] payload) {
+        if (payload == null || payload.length == 0) return;
         try {
-            PatientEvent patientEvent = PatientEvent.parseFrom(event);
-            // ... perform any business related to analytics here
-
-            log.info("Received Patient Event: [PatientId={}, PatientName={}, PatientEmail={}",
+            log.info("Consuming message from patient-topic, size={}", payload.length);
+            PatientEvent patientEvent = PatientEvent.parseFrom(payload);
+            log.info("Received Patient Event: [PatientId={}, PatientName={}, PatientEmail={}]",
                     patientEvent.getPatientId(),
                     patientEvent.getName(),
                     patientEvent.getEmail());
         } catch (InvalidProtocolBufferException e) {
-            log.error("Error deserializing event {} ", e.getMessage());
+            log.error("Error deserializing event: {}", e.getMessage());
+        } catch (Throwable t) {
+            log.error("Unexpected error in consumeEvent", t);
         }
-
     }
 }

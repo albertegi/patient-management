@@ -14,11 +14,14 @@ RUN mvn clean package -DskipTests
 # Runtime Stage
 FROM eclipse-temurin:21-jdk AS runner
 
+# Install curl for healthcheck
+RUN apt-get update && apt-get install -y --no-install-recommends curl && rm -rf /var/lib/apt/lists/*
+
 WORKDIR /app
 
 COPY --from=builder /app/target/patient-service-0.0.1-SNAPSHOT.jar ./app.jar
 
-EXPOSE 8080
+EXPOSE 8085
 
 ENTRYPOINT ["java", "-jar", "app.jar"]
 
