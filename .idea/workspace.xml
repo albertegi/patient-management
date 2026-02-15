@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="447b987c-91dd-4ef2-af9f-876edc9685c8" name="Changes" comment="** Create UserRepository to interact with the database to fetch, retrieve, update and save data" />
+    <list default="true" id="447b987c-91dd-4ef2-af9f-876edc9685c8" name="Changes" comment="inject UserService in the AuthService as part of dependency injection to be able to find a user by Email in the UserService.">
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/alvirg/authservice/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/alvirg/authservice/util/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/alvirg/authservice/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/alvirg/authservice/service/AuthService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,8 +22,8 @@
         <option value="Exception" />
         <option value="HTTP Request" />
         <option value="Dockerfile" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -213,7 +218,7 @@
       <workItem from="1770165059317" duration="47695000" />
       <workItem from="1770677050479" duration="434000" />
       <workItem from="1770746713970" duration="18584000" />
-      <workItem from="1770869886485" duration="62230000" />
+      <workItem from="1770869886485" duration="68623000" />
     </task>
     <task id="LOCAL-00001" summary="Initial microservices project setup">
       <option name="closed" value="true" />
@@ -471,7 +476,15 @@
       <option name="project" value="LOCAL" />
       <updated>1771111408635</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="inject UserService in the AuthService as part of dependency injection to be able to find a user by Email in the UserService.">
+      <option name="closed" value="true" />
+      <created>1771111714037</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1771111714037</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -489,7 +502,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add PatientController class and a getPatients method to get all patients in the system" />
     <MESSAGE value="add inbuilt request call api get-patients.http to make request calls" />
     <MESSAGE value="add PatientRequest and required attributes and validation" />
     <MESSAGE value="** add exception handling for validation errors&#10;** add create-patient to create patient&#10;** other fixes" />
@@ -514,7 +526,8 @@
     <MESSAGE value="** Create AuthService class to handle the business logic to authenticate the user and validating the user credentials and returning a token" />
     <MESSAGE value="** Create UserService to handle all user services and business logic" />
     <MESSAGE value="** Create UserRepository to interact with the database to fetch, retrieve, update and save data" />
-    <option name="LAST_COMMIT_MESSAGE" value="** Create UserRepository to interact with the database to fetch, retrieve, update and save data" />
+    <MESSAGE value="inject UserService in the AuthService as part of dependency injection to be able to find a user by Email in the UserService." />
+    <option name="LAST_COMMIT_MESSAGE" value="inject UserService in the AuthService as part of dependency injection to be able to find a user by Email in the UserService." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
