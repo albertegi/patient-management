@@ -11,12 +11,21 @@ import org.springframework.security.web.SecurityFilterChain;
 @Configuration
 public class SecurityConfig {
 
-    @Bean
-    public SecurityFilterChain securityFilterChain(HttpSecurity http){
-        http.authorizeHttpRequests(authorize -> authorize.anyRequest().permitAll())
-                .csrf(AbstractHttpConfigurer::disable);
+    private static final String[] PUBLIC_URLS = {
+            "/login"
+    };
 
-        return http.build();
+    @Bean
+    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception{
+        return http
+                .csrf(AbstractHttpConfigurer::disable)
+                .authorizeHttpRequests(req->
+                        req.requestMatchers(PUBLIC_URLS)
+                                .permitAll()
+                                .anyRequest()
+                                .authenticated())
+                .build();
+
     }
 
     @Bean

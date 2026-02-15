@@ -1,7 +1,9 @@
 package com.alvirg.authservice.util;
 
+import io.jsonwebtoken.JwtException;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.security.Keys;
+import io.jsonwebtoken.security.SignatureException;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
@@ -38,5 +40,20 @@ public class JwtUtil {
                 .signWith(secretKey)
                 .compact();
 
+    }
+
+    public void validateToken(String token) {
+
+        try {
+            Jwts.parserBuilder()
+                    .setSigningKey(secretKey)
+                    .build()
+                    .parseClaimsJws(token);
+
+        } catch (SignatureException e) {
+            throw new JwtException("Invalid JWT signature");
+        } catch (JwtException e) {
+            throw new JwtException("Invalid JWT");
+        }
     }
 }

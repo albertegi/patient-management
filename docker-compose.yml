@@ -79,6 +79,7 @@ services:
       context: ./auth-service
       dockerfile: Dockerfile
     environment:
+      JWT_SECRET: sRilhKJvu9aLQbAq3v3VE9X3GyMEKMHOmhhTRygSo14E
       SPRING_PROFILES_ACTIVE: dev
 #      SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:9092
       AUTH_SERVICE_URL: auth-service-db
@@ -86,6 +87,8 @@ services:
       POSTGRES_USER: ${POSTGRES_USER:-postgres}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-password}
       AUTH_SERVICE_DB: ${AUTH_SERVICE_DB:-auth_service_database}
+#      JWT
+
     ports:
       - "${AUTH_SERVICE_API_PORT:-8088}:8088"
     healthcheck:

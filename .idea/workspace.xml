@@ -4,11 +4,45 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="447b987c-91dd-4ef2-af9f-876edc9685c8" name="Changes" comment="inject UserService in the AuthService as part of dependency injection to be able to find a user by Email in the UserService.">
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/alvirg/authservice/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/alvirg/authservice/util/JwtUtil.java" afterDir="false" />
+    <list default="true" id="447b987c-91dd-4ef2-af9f-876edc9685c8" name="Changes" comment="add jwt security set up and configurations">
+      <change afterPath="$PROJECT_DIR$/api-requests/auth-service/login.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-03T182621.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-03T182825.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-03T185554.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-03T185713.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-03T185824.202.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-03T190001.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-03T190032.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-03T190228.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-03T194505.202.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-06T232545.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-06T233447.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-07T000318.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-07T002757.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-07T003155.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-12T012840.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-13T023014.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-13T033544.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-13T034335.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-13T040938.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-13T042054.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-13T042809.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-13T042936.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-13T043150.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-13T044341.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-requests/patient-service/create-patient.http" beforeDir="false" afterPath="$PROJECT_DIR$/api-requests/patient-service/create-patient.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/alvirg/authservice/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/alvirg/authservice/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/alvirg/authservice/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/alvirg/authservice/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/alvirg/authservice/dto/LoginResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/alvirg/authservice/dto/LoginResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/alvirg/authservice/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/alvirg/authservice/service/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/alvirg/authservice/util/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/alvirg/authservice/util/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,10 +54,10 @@
       <list>
         <option value="Record" />
         <option value="Exception" />
-        <option value="HTTP Request" />
         <option value="Dockerfile" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTTP Request" />
       </list>
     </option>
   </component>
@@ -66,6 +100,7 @@
     "HTTP Request.create-patient | Create a new patient.executor": "Run",
     "HTTP Request.delete-patient | Delete and entitity.executor": "Run",
     "HTTP Request.get-patients | GET request to get all patients.executor": "Run",
+    "HTTP Request.login | Login Request to retrieve a token.executor": "Run",
     "HTTP Request.update-patient | Update an existing patient entity.executor": "Run",
     "Maven.analytics-service [clean].executor": "Run",
     "Maven.analytics-service [compile].executor": "Run",
@@ -136,7 +171,7 @@
     <configuration name="get-patients | GET request to get all patients" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/get-patients.http" requestIdentifier="GET request to get all patients" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="update-patient | Update an existing patient entity" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/update-patient.http" requestIdentifier="Update an existing patient entity" runType="Run single request">
+    <configuration name="login | Login Request to retrieve a token" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/auth-service/login.http" requestIdentifier="Login Request to retrieve a token" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="AnalyticsServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
@@ -177,10 +212,10 @@
     </configuration>
     <list>
       <item itemvalue="HTTP Request.create-patient | Create a new patient (patient-service publishes to patient-topic; analytics-service consumes and logs the event)" />
+      <item itemvalue="HTTP Request.login | Login Request to retrieve a token" />
       <item itemvalue="HTTP Request.create-patient | Create a new patient" />
       <item itemvalue="HTTP Request.delete-patient | Delete and entitity" />
       <item itemvalue="HTTP Request.get-patients | GET request to get all patients" />
-      <item itemvalue="HTTP Request.update-patient | Update an existing patient entity" />
       <item itemvalue="Spring Boot.ApiGatewayApplication" />
       <item itemvalue="Spring Boot.AuthServiceApplication" />
       <item itemvalue="Spring Boot.AnalyticsServiceApplication" />
@@ -189,11 +224,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.get-patients | GET request to get all patients" />
+        <item itemvalue="HTTP Request.login | Login Request to retrieve a token" />
         <item itemvalue="HTTP Request.create-patient | Create a new patient (patient-service publishes to patient-topic; analytics-service consumes and logs the event)" />
+        <item itemvalue="HTTP Request.get-patients | GET request to get all patients" />
         <item itemvalue="HTTP Request.create-patient | Create a new patient" />
         <item itemvalue="HTTP Request.delete-patient | Delete and entitity" />
-        <item itemvalue="HTTP Request.update-patient | Update an existing patient entity" />
       </list>
     </recent_temporary>
   </component>
@@ -218,7 +253,7 @@
       <workItem from="1770165059317" duration="47695000" />
       <workItem from="1770677050479" duration="434000" />
       <workItem from="1770746713970" duration="18584000" />
-      <workItem from="1770869886485" duration="68623000" />
+      <workItem from="1770869886485" duration="79143000" />
     </task>
     <task id="LOCAL-00001" summary="Initial microservices project setup">
       <option name="closed" value="true" />
@@ -484,7 +519,15 @@
       <option name="project" value="LOCAL" />
       <updated>1771111714037</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="add jwt security set up and configurations">
+      <option name="closed" value="true" />
+      <created>1771120581860</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1771120581860</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -502,7 +545,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add inbuilt request call api get-patients.http to make request calls" />
     <MESSAGE value="add PatientRequest and required attributes and validation" />
     <MESSAGE value="** add exception handling for validation errors&#10;** add create-patient to create patient&#10;** other fixes" />
     <MESSAGE value="** add exception handling for EmailAlreadyExistsException" />
@@ -527,7 +569,8 @@
     <MESSAGE value="** Create UserService to handle all user services and business logic" />
     <MESSAGE value="** Create UserRepository to interact with the database to fetch, retrieve, update and save data" />
     <MESSAGE value="inject UserService in the AuthService as part of dependency injection to be able to find a user by Email in the UserService." />
-    <option name="LAST_COMMIT_MESSAGE" value="inject UserService in the AuthService as part of dependency injection to be able to find a user by Email in the UserService." />
+    <MESSAGE value="add jwt security set up and configurations" />
+    <option name="LAST_COMMIT_MESSAGE" value="add jwt security set up and configurations" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -28,3 +28,9 @@ logging:
 
 server:
   port: 8088
+
+application:
+  security:
+    jwt:
+      jwt_secret: sRilhKJvu9aLQbAq3v3VE9X3GyMEKMHOmhhTRygSo14E
+

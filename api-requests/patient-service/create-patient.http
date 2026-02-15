@@ -1,10 +1,10 @@
 ### Create a new patient (patient-service publishes to patient-topic; analytics-service consumes and logs the event)
-POST http://localhost:8085/api/v1/patients
+POST http://localhost:8333/api/v1/patients
 Content-Type: application/json
 
 {
-  "name": "Albert CW3",
-  "email": "cw3@email.com",
+  "name": "Albert CW5",
+  "email": "cw5@email.com",
   "address": "Pipkin Court 38",
   "dateOfBirth": "1978-09-21",
   "registeredDate": "2024-02-24"

@@ -39,6 +39,18 @@ spring:
             ## REST-CLIENT --> http://localhost:8085/api-docs/patients
             ## API GATEWAY --> http://patient-service:8085/v3/api-docs
 
+            - id: auth-service-route
+              uri:
+                http://auth-service:8088
+              predicates:
+                - name: Path
+                  args:
+                    pattern: /api/v1/login
+              filters:
+                - name: StripPrefix
+                  args:
+                    parts: 2
+
 server:
   port: 8333
 
