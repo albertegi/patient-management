@@ -1,3 +1,279 @@
+GET http://localhost:8333/api/v1/patients
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0dXNlckB0ZXN0LmNvbSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc3MTIwMTIwMiwiZXhwIjoxNzcxMjM3MjAyfQ.4qyZ8zXeWxPV2Uu_lHkcvwIiQuDnEWzhT5g_nt3GIbM
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=2038031ECA1E44FC98D6A2AD7278AF00
+content-length: 0
+
+<> 2026-02-16T002022.200.json
+
+###
+
+POST http://localhost:8333/auth/login
+Content-Type: application/json
+Content-Length: 63
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=2038031ECA1E44FC98D6A2AD7278AF00
+
+{
+  "email": "testuser@test.com",
+  "password": "password123"
+}
+
+<> 2026-02-16T002002.200.json
+
+###
+
+GET http://localhost:8333/api/v1/patients
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0dXNlckB0ZXN0LmNvbSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc3MTE5ODQ0NCwiZXhwIjoxNzcxMjM0NDQ0fQ.WbQc4I3jYnupwpj0_ujAF0YhPlE5Tbl-uP7PulD4Voo
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=2038031ECA1E44FC98D6A2AD7278AF00
+content-length: 0
+
+<> 2026-02-15T235546.200.json
+
+###
+
+GET http://localhost:8333/api/v1/patients
+Authorization: Bearer dkfhasjkfhdskjfhuewiofhshgsgh
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=2038031ECA1E44FC98D6A2AD7278AF00
+content-length: 0
+
+###
+
+GET http://localhost:8333/api/v1/patients
+Authorization: Bearer dkfhasjkfhdskjfhuewiofhshgsgh
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=2038031ECA1E44FC98D6A2AD7278AF00
+content-length: 0
+
+<> 2026-02-15T233843.500.json
+
+###
+
+GET http://localhost:8333/api/v1/patients
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=2038031ECA1E44FC98D6A2AD7278AF00
+content-length: 0
+
+###
+
+GET http://localhost:8333/api/v1/patients
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0dXNlckB0ZXN0LmNvbSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc3MTE5ODQ0NCwiZXhwIjoxNzcxMjM0NDQ0fQ.WbQc4I3jYnupwpj0_ujAF0YhPlE5Tbl-uP7PulD4Voo
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=2038031ECA1E44FC98D6A2AD7278AF00
+content-length: 0
+
+<> 2026-02-15T233629.200.json
+
+###
+
+POST http://localhost:8333/auth/login
+Content-Type: application/json
+Content-Length: 63
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=2038031ECA1E44FC98D6A2AD7278AF00
+
+{
+  "email": "testuser@test.com",
+  "password": "password123"
+}
+
+<> 2026-02-15T233404.200.json
+
+###
+
+GET http://localhost:8333/auth/validate
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0dXNlckB0ZXN0LmNvbSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc3MTEzNTY3MywiZXhwIjoxNzcxMTcxNjczfQ.GdNhS60_K6H2O9SoIOjDQ2hpz9HrolVMpX5JD7dwDD8
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=2038031ECA1E44FC98D6A2AD7278AF00
+content-length: 0
+
+###
+
+POST http://localhost:8333/auth/login
+Content-Type: application/json
+Content-Length: 63
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=2038031ECA1E44FC98D6A2AD7278AF00
+
+{
+  "email": "testuser@test.com",
+  "password": "password123"
+}
+
+<> 2026-02-15T060753.200.json
+
+###
+
+GET http://localhost:8333/auth/login
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=2038031ECA1E44FC98D6A2AD7278AF00
+content-length: 63
+
+{
+  "email": "testuser@test.com",
+  "password": "password123"
+}
+
+###
+
+POST http://localhost:8088/login
+Content-Type: application/json
+Content-Length: 63
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=2038031ECA1E44FC98D6A2AD7278AF00
+
+{
+  "email": "testuser@test.com",
+  "password": "password123"
+}
+
+<> 2026-02-15T060321.200.json
+
+###
+
+GET http://localhost:8333/auth/login
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=F636B812DF2EA8174A4173B73AD336E2
+content-length: 63
+
+{
+  "email": "testuser@test.com",
+  "password": "password123"
+}
+
+###
+
+GET http://localhost:8088/validate
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0dXNlckB0ZXN0LmNvbSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc3MTEzMzA5NiwiZXhwIjoxNzcxMTY5MDk2fQ.5H-fRtueUKDIpuGUskKuNywRbVCg-2UfbFJkRBJx55s
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=F636B812DF2EA8174A4173B73AD336E2
+content-length: 0
+
+###
+
+POST http://localhost:8088/login
+Content-Type: application/json
+Content-Length: 63
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=F636B812DF2EA8174A4173B73AD336E2
+
+{
+  "email": "testuser@test.com",
+  "password": "password123"
+}
+
+<> 2026-02-15T052456.200.json
+
+###
+
+GET http://localhost:8088/validate
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0dXNlckB0ZXN0LmNvbSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc3MTEzMjU3MywiZXhwIjoxNzcxMTY4NTczfQ.gRAuDZLMHoCKdZPxBHSDCWV0LOPWRIl7fyDYAWPZnzk
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=F636B812DF2EA8174A4173B73AD336E2
+content-length: 0
+
+###
+
+GET http://localhost:8088/validate
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0dXNlckB0ZXN0LmNvbSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc3MTEzMjU3MywiZXhwIjoxNzcxMTY4NTczfQ.gRAuDZLMHoCKdZPxBHSDCWV0LOPWRIl7fyDYAWPZnzk
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=F636B812DF2EA8174A4173B73AD336E2
+content-length: 0
+
+###
+
+POST http://localhost:8088/login
+Content-Type: application/json
+Content-Length: 63
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=F636B812DF2EA8174A4173B73AD336E2
+
+{
+  "email": "testuser@test.com",
+  "password": "password123"
+}
+
+<> 2026-02-15T051613.200.json
+
+###
+
+GET http://localhost:8333/api/v1/login
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0dXNlckB0ZXN0LmNvbSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc3MTEzMjQ1NSwiZXhwIjoxNzcxMTY4NDU1fQ.y1ncu7o0DJDpZrYIuy5gNgsJ8FvRdf24piFryOOBRY8
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=F636B812DF2EA8174A4173B73AD336E2
+content-length: 0
+
+###
+
+POST http://localhost:8088/validate
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0dXNlckB0ZXN0LmNvbSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc3MTEzMjQ1NSwiZXhwIjoxNzcxMTY4NDU1fQ.y1ncu7o0DJDpZrYIuy5gNgsJ8FvRdf24piFryOOBRY8
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=94056678109CF1B0D055B314BE3FBFFF
+content-length: 0
+
+###
+
+POST http://localhost:8088/login
+Content-Type: application/json
+Content-Length: 63
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=94056678109CF1B0D055B314BE3FBFFF
+
+{
+  "email": "testuser@test.com",
+  "password": "password123"
+}
+
+<> 2026-02-15T051415.200.json
+
+###
+
 POST http://localhost:8333/api/v1/login
 Content-Type: application/json
 Content-Length: 63
@@ -418,349 +694,6 @@ Accept: */*
 content-length: 0
 
 <> 2026-02-14T060229.404.json
-
-###
-
-GET http://localhost:8333/api/v1/patients
-Content-Type: application/json
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2026-02-14T055656.404.json
-
-###
-
-GET http://localhost:8085/api/v1/patients
-Content-Type: application/json
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2026-02-14T055629.200.json
-
-###
-
-POST http://localhost:8085/api/v1/patients
-Content-Type: application/json
-Content-Length: 151
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "Albert CW3",
-  "email": "cw3@email.com",
-  "address": "Pipkin Court 38",
-  "dateOfBirth": "1978-09-21",
-  "registeredDate": "2024-02-24"
-}
-
-<> 2026-02-14T055610.201.json
-
-###
-
-GET http://localhost:8085/api/v1/patients
-Content-Type: application/json
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2026-02-14T055549.200.json
-
-###
-
-POST http://localhost:8333/api/v1/patients
-Content-Type: application/json
-Content-Length: 151
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "Albert CW3",
-  "email": "cw3@email.com",
-  "address": "Pipkin Court 38",
-  "dateOfBirth": "1978-09-21",
-  "registeredDate": "2024-02-24"
-}
-
-<> 2026-02-14T055507.404.json
-
-###
-
-GET http://localhost:8333/api/v1/patients
-Content-Type: application/json
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2026-02-14T055406.404.json
-
-###
-
-GET http://localhost:8085/api/v1/patients
-Content-Type: application/json
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2026-02-14T055350.200.json
-
-###
-
-POST http://localhost:8085/api/v1/patients
-Content-Type: application/json
-Content-Length: 151
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "Albert CW2",
-  "email": "cw2@email.com",
-  "address": "Pipkin Court 38",
-  "dateOfBirth": "1978-09-21",
-  "registeredDate": "2024-02-24"
-}
-
-<> 2026-02-14T055249.201.json
-
-###
-
-GET http://localhost:8333/api/v1/patients
-Content-Type: application/json
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2026-02-14T055210.404.json
-
-###
-
-GET http://localhost:8333/api/v1/patients
-Content-Type: application/json
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2026-02-14T055121.404.json
-
-###
-
-POST http://localhost:8085/api/v1/patients
-Content-Type: application/json
-Content-Length: 149
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "Albert CW",
-  "email": "cw@email.com",
-  "address": "Pipkin Court 38",
-  "dateOfBirth": "1978-09-21",
-  "registeredDate": "2024-02-24"
-}
-
-<> 2026-02-14T032538.201.json
-
-###
-
-POST http://localhost:8085/api/v1/patients
-Content-Type: application/json
-Content-Length: 161
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "Precious Albert fi",
-  "email": "albifi@email.com",
-  "address": "Pipkin Court 2",
-  "dateOfBirth": "1978-09-21",
-  "registeredDate": "2024-02-24"
-}
-
-<> 2026-02-14T011758.201.json
-
-###
-
-POST http://localhost:8085/api/v1/patients
-Content-Type: application/json
-Content-Length: 168
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "Precious Albert finalftt",
-  "email": "albiftt@email.com",
-  "address": "Pipkin Court 2",
-  "dateOfBirth": "1978-09-21",
-  "registeredDate": "2024-02-24"
-}
-
-<> 2026-02-14T010725.201.json
-
-###
-
-POST http://localhost:8085/api/v1/patients
-Content-Type: application/json
-Content-Length: 166
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "Precious Albert finalft",
-  "email": "albift@email.com",
-  "address": "Pipkin Court 2",
-  "dateOfBirth": "1978-09-21",
-  "registeredDate": "2024-02-24"
-}
-
-<> 2026-02-13T055523.201.json
-
-###
-
-POST http://localhost:8085/api/v1/patients
-Content-Type: application/json
-Content-Length: 164
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "Precious Albert finalf",
-  "email": "albif@email.com",
-  "address": "Pipkin Court 2",
-  "dateOfBirth": "1978-09-21",
-  "registeredDate": "2024-02-24"
-}
-
-<> 2026-02-13T055454.201.json
-
-###
-
-POST http://localhost:8085/api/v1/patients
-Content-Type: application/json
-Content-Length: 162
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "Precious Albert final",
-  "email": "albi@email.com",
-  "address": "Pipkin Court 2",
-  "dateOfBirth": "1978-09-21",
-  "registeredDate": "2024-02-24"
-}
-
-<> 2026-02-13T051613.201.json
-
-###
-
-POST http://localhost:8085/api/v1/patients
-Content-Type: application/json
-Content-Length: 167
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "Precious Kafka15 final",
-  "email": "kafka15f@email.com",
-  "address": "Pipkin Court 2",
-  "dateOfBirth": "1978-09-21",
-  "registeredDate": "2024-02-24"
-}
-
-<> 2026-02-13T050533.201.json
-
-###
-
-POST http://localhost:8085/api/v1/patients
-Content-Type: application/json
-Content-Length: 160
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "Precious Kafka15",
-  "email": "kafka15@email.com",
-  "address": "Pipkin Court 2",
-  "dateOfBirth": "1978-09-21",
-  "registeredDate": "2024-02-24"
-}
-
-<> 2026-02-13T050000.201.json
-
-###
-
-POST http://localhost:8085/api/v1/patients
-Content-Type: application/json
-Content-Length: 160
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "Precious Kafka14",
-  "email": "kafka14@email.com",
-  "address": "Pipkin Court 2",
-  "dateOfBirth": "1978-09-21",
-  "registeredDate": "2024-02-24"
-}
-
-<> 2026-02-13T045130.201.json
-
-###
-
-POST http://localhost:8085/api/v1/patients
-Content-Type: application/json
-Content-Length: 160
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "Precious Kafka13",
-  "email": "kafka13@email.com",
-  "address": "Pipkin Court 2",
-  "dateOfBirth": "1978-09-21",
-  "registeredDate": "2024-02-24"
-}
-
-<> 2026-02-13T045044.201.json
-
-###
-
-POST http://localhost:8085/api/v1/patients
-Content-Type: application/json
-Content-Length: 160
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.6
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "Precious Kafka12",
-  "email": "kafka12@email.com",
-  "address": "Pipkin Court 2",
-  "dateOfBirth": "1978-09-21",
-  "registeredDate": "2024-02-24"
-}
-
-<> 2026-02-13T044722.201.json
 
 ###
 

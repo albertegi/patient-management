@@ -19,8 +19,9 @@ spring:
                 - name: StripPrefix
                   args:
                     parts: 2
+                - JwtValidation
 
-              ## REST CLIENT --> http://localhost:8085/api/v1/patients
+              ## REST CLIENT --> http://localhost:8333/api/v1/patients
               ## API GATEWAY --> http://patient-service:8085/patients
               ## PATIENT SERVICE (SPRING BOOT APP) --> /patient --> Patients Array
 
@@ -36,7 +37,20 @@ spring:
                     regexp: /api-docs/patients
                     replacement: /v3/api-docs
 
-            ## REST-CLIENT --> http://localhost:8085/api-docs/patients
+            - id: api-docs-auth-route
+              uri:
+                http://auth-service:8088
+              predicates:
+                - name: Path
+                  args:
+                    pattern: /api-docs/auth
+              filters:
+                - name: RewritePath
+                  args:
+                    regexp: /api-docs/auth
+                    replacement: /v3/api-docs
+
+            ## REST-CLIENT --> http://localhost:8333/api-docs/patients
             ## API GATEWAY --> http://patient-service:8085/v3/api-docs
 
             - id: auth-service-route
@@ -45,12 +59,17 @@ spring:
               predicates:
                 - name: Path
                   args:
-                    pattern: /api/v1/login
+                    pattern: /auth/**
               filters:
                 - name: StripPrefix
                   args:
-                    parts: 2
+                    parts: 1
+
+            ## REST-CLIENT --> http://localhost:8333/auth/login
+            ## API GATEWAY --> http://auth-service:8088/login
+
 
 server:
   port: 8333
+
 

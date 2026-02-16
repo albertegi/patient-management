@@ -103,19 +103,5 @@
     "email": "isabella.walker@example.com",
     "address": "789 Willow St, Springfield",
     "dateOfBirth": "1987-10-17"
-  },
-  {
-    "id": "26ed0c56-85e8-4969-af5d-946c88d92a08",
-    "name": "Albert CW2",
-    "email": "cw2@email.com",
-    "address": "Pipkin Court 38",
-    "dateOfBirth": "1978-09-21"
-  },
-  {
-    "id": "03ab4d69-5854-4414-b6c9-d495c3eeeead",
-    "name": "Albert CW3",
-    "email": "cw3@email.com",
-    "address": "Pipkin Court 38",
-    "dateOfBirth": "1978-09-21"
   }
 ]

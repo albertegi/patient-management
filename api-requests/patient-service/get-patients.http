@@ -1,5 +1,6 @@
 ### GET request to get all patients
 GET http://localhost:8333/api/v1/patients
-Content-Type: application/json
+Authorization: Bearer {{token}}
+#Authorization: Bearer dkfhasjkfhdskjfhuewiofhshgsgh
 
 ###

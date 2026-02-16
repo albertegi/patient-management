@@ -12,7 +12,13 @@ import org.springframework.security.web.SecurityFilterChain;
 public class SecurityConfig {
 
     private static final String[] PUBLIC_URLS = {
-            "/login"
+            "/auth/**",
+            "/login",
+            "/validate",
+            "/v3/api-docs/**",
+            "/swagger-ui/**",
+            "/swagger-ui.html"
+
     };
 
     @Bean

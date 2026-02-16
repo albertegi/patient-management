@@ -1,7 +1,0 @@
-{
-  "timestamp": "2026-02-14T05:54:06.899Z",
-  "path": "/api/v1/patients",
-  "status": 404,
-  "error": "Not Found",
-  "requestId": "79d1de30-14"
-}

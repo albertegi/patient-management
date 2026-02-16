@@ -37,7 +37,6 @@ services:
       retries: 20
 
 
-
   patient-service:
     image: patient-service:latest
     build:
@@ -140,6 +139,7 @@ services:
     ports:
       - "${API_GATEWAY_PORT:-8333}:8333"
     environment:
+      AUTH_SERVICE_URL: http://auth-service:8088
       SPRING_PROFILES_ACTIVE: dev
     healthcheck:
       test: [ "CMD", "curl", "-f", "http://localhost:8333/actuator/health" ]
