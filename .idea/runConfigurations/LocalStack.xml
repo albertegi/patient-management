@@ -1,0 +1,20 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="LocalStack" type="Application" factoryName="Application" nameIsGenerated="true">
+    <envs>
+      <env name="JSII_SILENCE_WARNING_UNTESTED_NODE_VERSION" value="1" />
+    </envs>
+    <option name="MAIN_CLASS_NAME" value="com.alvirg.stack.LocalStack" />
+    <module name="Infrastructure" />
+    <shortenClasspath name="ARGS_FILE" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Infrastructure" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="com.alvirg.stack.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

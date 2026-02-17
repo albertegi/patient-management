@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="447b987c-91dd-4ef2-af9f-876edc9685c8" name="Changes" comment="** add integration test&#10;** gateway validation and routing&#10;** security">
-      <change afterPath="$PROJECT_DIR$/Infrastructure/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Infrastructure/src/main/java/com/alvirg/stack/LocalStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="447b987c-91dd-4ef2-af9f-876edc9685c8" name="Changes" comment="** add Integration test for Patient an Auth&#10;** Infrastructure set up for Local Stack Deployment">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/integration-tests/src/test/java/PatientIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/integration-tests/src/test/java/PatientIntegrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/integration-tests/target/test-classes/AuthIntegrationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/integration-tests/target/test-classes/AuthIntegrationTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/src/main/java/com/alvirg/stack/LocalStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/src/main/java/com/alvirg/stack/LocalStack.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +58,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.LocalStack.executor": "Run",
     "Docker.patient-service-db.executor": "Run",
     "Docker.patient-service.executor": "Run",
     "HTTP Request.create-patient | Create a new patient (patient-service publishes to patient-topic; analytics-service consumes and logs the event).executor": "Run",
@@ -134,7 +130,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in integration-tests">
+  <component name="RunManager" selected="Application.LocalStack">
     <configuration name="get-patients | GET request to get all patients" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/get-patients.http" requestIdentifier="GET request to get all patients" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -204,6 +200,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.LocalStack" />
       <item itemvalue="HTTP Request.login | Login Request to retrieve a token" />
       <item itemvalue="HTTP Request.get-patients | GET request to get all patients" />
       <item itemvalue="JUnit.All in integration-tests" />
@@ -246,7 +243,7 @@
       <workItem from="1770165059317" duration="47695000" />
       <workItem from="1770677050479" duration="434000" />
       <workItem from="1770746713970" duration="18584000" />
-      <workItem from="1770869886485" duration="110163000" />
+      <workItem from="1770869886485" duration="116141000" />
     </task>
     <task id="LOCAL-00001" summary="Initial microservices project setup">
       <option name="closed" value="true" />
@@ -536,7 +533,15 @@
       <option name="project" value="LOCAL" />
       <updated>1771206326536</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="** add Integration test for Patient an Auth&#10;** Infrastructure set up for Local Stack Deployment">
+      <option name="closed" value="true" />
+      <created>1771304209618</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1771304209618</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -554,7 +559,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="** add exception handling for EmailAlreadyExistsException" />
     <MESSAGE value="** add updatePatient method in controller to update patient record&#10;&#10;** add updatePatient method to handle the business logic of updating a patient record&#10;&#10;** add exception to handle when a patient record is not found by id&#10;&#10;** update the exception in GlobalExceptionHandler" />
     <MESSAGE value="** add update-patient.http to request for patient update&#10;&#10;** add CreatePatientValidationGroup to handle validation for registered date&#10;&#10;** other fixes" />
     <MESSAGE value="fixes&#10;&#10;** add CreatePatientValidationGroup to handle validation for registered date&#10;&#10;** other fixes" />
@@ -579,7 +583,8 @@
     <MESSAGE value="add jwt security set up and configurations" />
     <MESSAGE value="** add an endpoint to validate token" />
     <MESSAGE value="** add integration test&#10;** gateway validation and routing&#10;** security" />
-    <option name="LAST_COMMIT_MESSAGE" value="** add integration test&#10;** gateway validation and routing&#10;** security" />
+    <MESSAGE value="** add Integration test for Patient an Auth&#10;** Infrastructure set up for Local Stack Deployment" />
+    <option name="LAST_COMMIT_MESSAGE" value="** add Integration test for Patient an Auth&#10;** Infrastructure set up for Local Stack Deployment" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
