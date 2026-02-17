@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="447b987c-91dd-4ef2-af9f-876edc9685c8" name="Changes" comment="** Add LocalStack file that generate a cdk.out folder and files">
+    <list default="true" id="447b987c-91dd-4ef2-af9f-876edc9685c8" name="Changes" comment="Add a VPC in to the infrastructure">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/cdk.out/localstack.template.json" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/cdk.out/localstack.template.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/cdk.out/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/cdk.out/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/cdk.out/tree.json" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/cdk.out/tree.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infrastructure/src/main/java/com/alvirg/stack/LocalStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/src/main/java/com/alvirg/stack/LocalStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/target/classes/com/alvirg/stack/LocalStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/target/classes/com/alvirg/stack/LocalStack.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -243,7 +247,7 @@
       <workItem from="1770165059317" duration="47695000" />
       <workItem from="1770677050479" duration="434000" />
       <workItem from="1770746713970" duration="18584000" />
-      <workItem from="1770869886485" duration="117690000" />
+      <workItem from="1770869886485" duration="120792000" />
     </task>
     <task id="LOCAL-00001" summary="Initial microservices project setup">
       <option name="closed" value="true" />
@@ -549,7 +553,15 @@
       <option name="project" value="LOCAL" />
       <updated>1771310232675</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Add a VPC in to the infrastructure">
+      <option name="closed" value="true" />
+      <created>1771343186370</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1771343186370</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -567,7 +579,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="** add update-patient.http to request for patient update&#10;&#10;** add CreatePatientValidationGroup to handle validation for registered date&#10;&#10;** other fixes" />
     <MESSAGE value="fixes&#10;&#10;** add CreatePatientValidationGroup to handle validation for registered date&#10;&#10;** other fixes" />
     <MESSAGE value="** several fixes and updates in the Dockerfile, docker-compose.yml and application-dev.yml files" />
     <MESSAGE value="** add kafka configuration in the docker compose file&#10;** define kafka topic for the patient service&#10;** add kafka dependencies in the pom file" />
@@ -592,7 +603,8 @@
     <MESSAGE value="** add integration test&#10;** gateway validation and routing&#10;** security" />
     <MESSAGE value="** add Integration test for Patient an Auth&#10;** Infrastructure set up for Local Stack Deployment" />
     <MESSAGE value="** Add LocalStack file that generate a cdk.out folder and files" />
-    <option name="LAST_COMMIT_MESSAGE" value="** Add LocalStack file that generate a cdk.out folder and files" />
+    <MESSAGE value="Add a VPC in to the infrastructure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add a VPC in to the infrastructure" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
