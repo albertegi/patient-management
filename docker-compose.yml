@@ -87,7 +87,6 @@ services:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-password}
       AUTH_SERVICE_DB: ${AUTH_SERVICE_DB:-auth_service_database}
 #      JWT
-
     ports:
       - "${AUTH_SERVICE_API_PORT:-8088}:8088"
     healthcheck:
