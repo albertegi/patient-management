@@ -99,7 +99,7 @@ public class LocalStack extends Stack {
                 .build();
     }
 
-    // health check for databases
+    // health check for all the  databases
     private CfnHealthCheck createDbHealthCheck(DatabaseInstance db, String id){
         return CfnHealthCheck.Builder.create(this, id)
                 .healthCheckConfig(CfnHealthCheck.HealthCheckConfigProperty.builder()
