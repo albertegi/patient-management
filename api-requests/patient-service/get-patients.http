@@ -1,5 +1,7 @@
 ### GET request to get all patients
-GET http://localhost:8333/api/v1/patients
+#GET http://localhost:8333/api/v1/patients
+# LocalStack (use after deploy: ./localstack-deploy.sh)
+GET http://lb-40b4eb74.elb.localhost.localstack.cloud:8333/api/v1/patients
 Authorization: Bearer {{token}}
 #Authorization: Bearer dkfhasjkfhdskjfhuewiofhshgsgh
 

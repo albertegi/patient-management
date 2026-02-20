@@ -1,0 +1,72 @@
+spring:
+  application:
+    name: api-gateway
+  main:
+    web-application-type: reactive
+  cloud:
+    gateway:
+      server:
+        webflux:
+          routes:
+            - id: patient-service-route
+              uri: ${PATIENT_SERVICE_URI:http://host.docker.internal:8085}
+              predicates:
+                - name: Path
+                  args:
+                    pattern: /api/v1/patients/**
+              filters:
+                - name: StripPrefix
+                  args:
+                    parts: 2
+                - JwtValidation
+
+              ## REST CLIENT --> http://localhost:8333/api/v1/patients
+              ## API GATEWAY --> http://patient-service:8085/patients
+              ## PATIENT SERVICE (SPRING BOOT APP) --> /patient --> Patients Array
+
+            - id: api-docs-patient-route
+              uri: ${PATIENT_SERVICE_URI:http://host.docker.internal:8085}
+              predicates:
+                - name: Path
+                  args:
+                    pattern: /api-docs/patients
+              filters:
+                - name: RewritePath
+                  args:
+                    regexp: /api-docs/patients
+                    replacement: /v3/api-docs
+
+            - id: api-docs-auth-route
+              uri: ${AUTH_SERVICE_URI:http://host.docker.internal:8088}
+              predicates:
+                - name: Path
+                  args:
+                    pattern: /api-docs/auth
+              filters:
+                - name: RewritePath
+                  args:
+                    regexp: /api-docs/auth
+                    replacement: /v3/api-docs
+
+            ## REST-CLIENT --> http://localhost:8333/api-docs/patients
+            ## API GATEWAY --> http://patient-service:8085/v3/api-docs
+
+            - id: auth-service-route
+              uri: ${AUTH_SERVICE_URI:http://host.docker.internal:8088}
+              predicates:
+                - name: Path
+                  args:
+                    pattern: /auth/**
+              filters:
+                - name: StripPrefix
+                  args:
+                    parts: 1
+
+            ## REST-CLIENT --> http://localhost:8333/auth/login
+            ## API GATEWAY --> http://auth-service:8088/login
+
+
+server:
+  port: 8333
+
+

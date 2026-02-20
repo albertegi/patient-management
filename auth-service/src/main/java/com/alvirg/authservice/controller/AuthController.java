@@ -5,7 +5,6 @@ import com.alvirg.authservice.dto.LoginRequest;
 import com.alvirg.authservice.dto.LoginResponse;
 import com.alvirg.authservice.service.AuthService;
 import io.swagger.v3.oas.annotations.Operation;
-import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -13,9 +12,12 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Optional;
 
 @RestController
-@RequiredArgsConstructor
 public class AuthController {
     private final AuthService authService;
+
+    public AuthController(AuthService authService) {
+        this.authService = authService;
+    }
 
     @Operation(summary = "Generate token on user login")
     @PostMapping("/login")

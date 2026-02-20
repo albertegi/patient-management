@@ -2,11 +2,15 @@ package com.alvirg.authservice.dto;
 
 import lombok.*;
 
-@Setter
 @Getter
-@AllArgsConstructor
+@Setter
+@NoArgsConstructor
 @Builder
 public class LoginResponse {
 
-    private final String token;
+    private String token;
+
+    public LoginResponse(String token) {
+        this.token = token;
+    }
 }

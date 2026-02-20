@@ -8,8 +8,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="api-gateway" />
-        <module name="Infrastructure" />
         <module name="integration-tests" />
+        <module name="infrastructure" />
       </profile>
       <profile name="Annotation profile for billing-service" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -40,9 +40,6 @@
         <module name="patient-service" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="infrastructure" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

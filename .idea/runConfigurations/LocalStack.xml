@@ -1,10 +1,12 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="LocalStack" type="Application" factoryName="Application" nameIsGenerated="true">
+    <option name="ALTERNATIVE_JRE_PATH" value="21" />
+    <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
     <envs>
       <env name="JSII_SILENCE_WARNING_UNTESTED_NODE_VERSION" value="1" />
     </envs>
     <option name="MAIN_CLASS_NAME" value="com.alvirg.stack.LocalStack" />
-    <module name="Infrastructure" />
+    <module name="infrastructure" />
     <shortenClasspath name="ARGS_FILE" />
     <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Infrastructure" />
     <extension name="coverage">

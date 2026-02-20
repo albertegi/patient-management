@@ -13,6 +13,7 @@ public class SecurityConfig {
 
     private static final String[] PUBLIC_URLS = {
             "/auth/**",
+            "/auth/login",
             "/login",
             "/validate",
             "/v3/api-docs/**",

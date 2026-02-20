@@ -4,8 +4,54 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="447b987c-91dd-4ef2-af9f-876edc9685c8" name="Changes" comment="created all the services in the infrastructure using Fargate Service">
-      <change beforePath="$PROJECT_DIR$/Infrastructure/src/main/java/com/alvirg/stack/LocalStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/src/main/java/com/alvirg/stack/LocalStack.java" afterDir="false" />
+    <list default="true" id="447b987c-91dd-4ef2-af9f-876edc9685c8" name="Changes" comment="Add the application load balancer to the infrastructure">
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application-prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-14T060229.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-14T060410.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-14T060423.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-14T062101.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-15T022115.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-15T022308.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-15T022330.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-15T023739.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-15T023811.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-15T023830.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-15T025408.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-15T030359.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-15T030456.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-02-15T030514.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/LocalStack.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/LocalStack.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/cdk.out/cdk.out" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/cdk.out/cdk.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/cdk.out/localstack.template.json" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/cdk.out/localstack.template.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/cdk.out/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/cdk.out/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/cdk.out/tree.json" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/cdk.out/tree.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/src/main/java/com/alvirg/stack/LocalStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/com/alvirg/stack/LocalStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/target/classes/com/alvirg/stack/LocalStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/target/classes/com/alvirg/stack/LocalStack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/localstack-deploy.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-requests/auth-service/login.http" beforeDir="false" afterPath="$PROJECT_DIR$/api-requests/auth-service/login.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-requests/patient-service/get-patients.http" beforeDir="false" afterPath="$PROJECT_DIR$/api-requests/patient-service/get-patients.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/alvirg/authservice/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/alvirg/authservice/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/alvirg/authservice/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/alvirg/authservice/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/alvirg/authservice/dto/LoginRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/alvirg/authservice/dto/LoginRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/alvirg/authservice/dto/LoginResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/alvirg/authservice/dto/LoginResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdk.out/cdk.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdk.out/localstack.template.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdk.out/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdk.out/tree.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/integration-tests/target/test-classes/AuthIntegrationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/integration-tests/target/test-classes/AuthIntegrationTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/integration-tests/target/test-classes/PatientIntegrationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/integration-tests/target/test-classes/PatientIntegrationTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,62 +101,62 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.LocalStack.executor": "Run",
-    "Docker.patient-service-db.executor": "Run",
-    "Docker.patient-service.executor": "Run",
-    "HTTP Request.create-patient | Create a new patient (patient-service publishes to patient-topic; analytics-service consumes and logs the event).executor": "Run",
-    "HTTP Request.create-patient | Create a new patient.executor": "Run",
-    "HTTP Request.delete-patient | Delete and entitity.executor": "Run",
-    "HTTP Request.get-patients | GET request to get all patients.executor": "Run",
-    "HTTP Request.login | Login Request to retrieve a token.executor": "Run",
-    "HTTP Request.update-patient | Update an existing patient entity.executor": "Run",
-    "HTTP Request.validate | GET Request to validate a token.executor": "Run",
-    "JUnit.All in integration-tests.executor": "Run",
-    "JUnit.AuthIntegrationTest.executor": "Run",
-    "JUnit.PatientIntegrationTest.executor": "Run",
-    "Maven.analytics-service [clean].executor": "Run",
-    "Maven.analytics-service [compile].executor": "Run",
-    "Maven.billing-service [compile].executor": "Run",
-    "Maven.patient-service [clean].executor": "Run",
-    "Maven.patient-service [compile].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.BillingServiceApplication.executor": "Run",
-    "Spring Boot.PatientServiceApplication.executor": "Run",
-    "deletionFromPopupRequiresConfirmation": "false",
-    "git-widget-placeholder": "main",
-    "jdk.selected.JAVA_MODULE": "21",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/albertegi/spring-projects/patient-management/auth-service/src/main/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.LocalStack.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.patient-service-db.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.patient-service.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.create-patient | Create a new patient (patient-service publishes to patient-topic; analytics-service consumes and logs the event).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.create-patient | Create a new patient.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.delete-patient | Delete and entitity.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.get-patients | GET request to get all patients.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.login | Login Request to retrieve a token.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.update-patient | Update an existing patient entity.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.validate | GET Request to validate a token.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.All in integration-tests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AuthIntegrationTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PatientIntegrationTest.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.analytics-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.analytics-service [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.billing-service [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.patient-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.patient-service [compile].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.BillingServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.PatientServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/albertegi/spring-projects/patient-management/api-gateway/src/main/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/api-gateway/src/main/resources" />
       <recent name="$PROJECT_DIR$/auth-service/src/main/resources" />
       <recent name="$PROJECT_DIR$/auth-service" />
-      <recent name="$PROJECT_DIR$/api-gateway/src/main/resources" />
       <recent name="$PROJECT_DIR$/api-gateway" />
       <recent name="$PROJECT_DIR$/analytics-service/src/main/resources" />
     </key>
@@ -213,11 +259,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.get-patients | GET request to get all patients" />
+        <item itemvalue="HTTP Request.login | Login Request to retrieve a token" />
         <item itemvalue="JUnit.All in integration-tests" />
         <item itemvalue="JUnit.PatientIntegrationTest" />
         <item itemvalue="JUnit.AuthIntegrationTest" />
-        <item itemvalue="HTTP Request.get-patients | GET request to get all patients" />
-        <item itemvalue="HTTP Request.login | Login Request to retrieve a token" />
       </list>
     </recent_temporary>
   </component>
@@ -242,7 +288,8 @@
       <workItem from="1770165059317" duration="47695000" />
       <workItem from="1770677050479" duration="434000" />
       <workItem from="1770746713970" duration="18584000" />
-      <workItem from="1770869886485" duration="132774000" />
+      <workItem from="1770869886485" duration="154533000" />
+      <workItem from="1771543247531" duration="6073000" />
     </task>
     <task id="LOCAL-00001" summary="Initial microservices project setup">
       <option name="closed" value="true" />
@@ -596,7 +643,15 @@
       <option name="project" value="LOCAL" />
       <updated>1771383728471</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Add the application load balancer to the infrastructure">
+      <option name="closed" value="true" />
+      <created>1771385351260</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1771385351260</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -614,7 +669,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="created a protobuf patient event that will be sent" />
     <MESSAGE value="** add analytics service&#10;** set up proto file&#10;** add configurations properties&#10;** completed patient producer code" />
     <MESSAGE value="add a docker file for analytics service" />
     <MESSAGE value="** set up analytics service as a docker image in docker compose file" />
@@ -639,7 +693,8 @@
     <MESSAGE value="Add Msk cluster for kafka in the infrastructure" />
     <MESSAGE value="create Ecs cluster for service discovery. This makes all services discoverable for communication" />
     <MESSAGE value="created all the services in the infrastructure using Fargate Service" />
-    <option name="LAST_COMMIT_MESSAGE" value="created all the services in the infrastructure using Fargate Service" />
+    <MESSAGE value="Add the application load balancer to the infrastructure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add the application load balancer to the infrastructure" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

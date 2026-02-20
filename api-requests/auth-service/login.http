@@ -1,6 +1,12 @@
 ### Login Request to retrieve a token
-POST http://localhost:8333/auth/login
+
+
+# Local dev (API Gateway)
+#POST http://localhost:8333/auth/login
+# Direct to auth-service
 #POST http://localhost:8088/login
+# LocalStack (use after deploy: ./localstack-deploy.sh)
+ POST http://lb-36765978.elb.localhost.localstack.cloud:8333/auth/login
 Content-Type: application/json
 
 {
